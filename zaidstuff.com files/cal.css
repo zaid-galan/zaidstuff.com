@@ -1,0 +1,99 @@
+::selection{
+    background: indigo;
+}
+.my-button {
+    
+  padding: 5px 10px;
+  background: red;
+  border:3px outset green;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;margin: 8px;
+
+}.my-button:hover,.my-button:focus {
+  color: white;
+  background: #8b00ff;
+  border-radius: 50px;
+  transition: all 0.4s;
+  box-shadow: 0 0 1px 5px green, 0 0 1px 10px palegoldenrod;
+}
+body{
+    
+  background: linear-gradient(to right, red,#1F0633,#1F0633,yellow) ;
+  color: blue;
+  font-size: 20px;
+  padding: 10px 20px;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    
+}
+#display{
+   width:100%;
+    padding: 20px;
+    font-size: 5rem;
+  text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns:repeat(4,1fr );
+    column-gap:10px;
+    grid-row-gap:10px;
+    padding: 25px
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px outset red;
+    background-color: hsl(273, 79%, 11%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer
+}
+button:hover{
+    background-color: hsl(273, 79%, 20%)
+}
+button:active{
+    background-color: hsl(273, 79%, 25%);
+    border: 3px inset red
+}
+.butt{
+    background-color: hsl(0, 100%, 50%);
+    border: 3px outset hsl(273, 79%, 11%);
+}
+.butt:hover{
+    background-color: hsl(0, 100%, 65%);
+}
+.butt:active{
+    background-color: hsl(0, 100%, 70%);
+    border: 3px inset hsl(273, 79%, 11%)
+}
+.big{
+    width: 480px;
+    border: 3px outset red;
+    background-color: hsl(273, 79%, 11%);
+}
+.big:hover{
+    background-color: hsl(273, 79%, 20%)
+}
+.big:active{
+    background-color: hsl(0, 100%, 70%);
+    border: 3px inset hsl(273, 79%, 11%)
+}

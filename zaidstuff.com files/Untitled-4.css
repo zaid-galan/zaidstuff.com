@@ -1,0 +1,23 @@
+.container{
+    position: relative;
+    display: inline-block;
+}
+div.active{
+    padding: 15px;
+    background: red;
+}
+.dropdown{
+    position: absolute;
+    width: 100%;
+    border: 2px outset green;
+    background: red;
+    z-index: 1;
+    display: none;
+}
+.dropdown a:hover{
+    background: deeppink;
+    color: white;
+}
+div.container:hover div.dropdown{
+    display: block;
+}

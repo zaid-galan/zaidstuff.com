@@ -1,0 +1,80 @@
+::selection{
+    background: indigo;
+}
+.chicken-div{background-image: url(https://i.ytimg.com/vi/qgG3jag-H6M/maxresdefault.jpg);background-position: center
+}
+.chicken-div:hover{
+  
+  border-radius: 50px;
+  transition: all 0.4s;
+  box-shadow: 0 0 1px 5px green, 0 0 1px 10px palegoldenrod;
+}
+body {
+  background-image:  url(https://www.humanesociety.org/sites/default/files/2018/06/chickens-in-grass_0.jpg);
+  background-size: 100px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+
+
+img {   color: white;
+  background: #5500ff;
+  border-radius: 50px;
+  transition: all 0.4s;
+  
+  width: 450px;
+}
+  
+ol {
+   font-weight:bold;
+}
+
+.my-button {
+  padding: 5px 10px;
+  background: red;
+  box-shadow: 0 0 3px 3px green;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;margin: 8px
+}.my-button:hover,.my-button:focus {
+  color: white;
+  background: #5500ff;
+  border-radius: 50px;
+  transition: all 0.4s;
+  box-shadow: 0 0 1px 5px green, 0 0 1px 10px palegoldenrod;
+}
+.g{font-family: fantasy;color: crimson}iframe{ padding: 5px 10px;
+  background: red;
+  box-shadow: 0 0 1px 2px green;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;margin: 5px
+}iframe:hover {
+  color: white;
+  background: #5500ff;
+  border-radius: 50px;
+  transition: all 0.4s;
+  box-shadow: 0 0 1px 5px green, 0 0 1px 10px palegoldenrod;}
+nav {
+        
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);}
+.my-button:active{padding:0 0 5px 10px;
+  background: #009999;
+
+  font-weight: lighter;
+  font-size: 14px;
+  color: rebeccapurple;
+  font-family: fantasy;
+  text-decoration: inherit;
+    margin: 8px
+}
