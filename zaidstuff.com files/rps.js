@@ -3,7 +3,7 @@ function randomNumber(max) {
 }
 function rps(playerChoice) {
     const choices = ['rock','paper','scissors'];
-    const computerChoice = choices[randomNumber(3)];
+    const computerChoice = choices[randomNumber(2)];
     var playersChoice = choices[playerChoice];
     var result = 'You chose ' + playersChoice + '. The computer chose ' + computerChoice + '. ';
     if (playersChoice === computerChoice) {
@@ -16,5 +16,5 @@ function rps(playerChoice) {
     else {
         result += "You lose!";
     }
-    document.getElementById('result').innerHTML = result;
+    document.getElementById('result').value = result;
 }
