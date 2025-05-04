@@ -7,11 +7,6 @@ function rps(playerChoice) {
          'rpapersleft.png',
          'rpscissorsleft.png'
     ];
-    const computerImages = [
-         'rockps.png',
-         'rpapers.png',
-         'rpscissors.png'
-    ];
     const choices = ['rock','paper','scissors'];
     const computerChoice = choices[randomNumber(3)];
     var playersChoice = choices[playerChoice];
@@ -28,5 +23,5 @@ function rps(playerChoice) {
     }
     document.getElementById('result').innerHTML = result;
     document.getElementById('playerImage').src = playerImages[playerChoice];
-    document.getElementById('computerImage').src = computerImages[randomNumber(3)];
+    document.getElementById('computerImage').src = `${computerChoice}.png`;
 }
