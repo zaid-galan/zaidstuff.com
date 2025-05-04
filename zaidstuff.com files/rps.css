@@ -1,0 +1,22 @@
+button{
+    width: 33.33%;
+    height: 100px;
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #ff0000;
+    cursor: pointer;
+}
+button:active{
+    background-color: #190e4b;
+}
+body{
+    background-color: #230d57;
+    color: #ff0000;
+    font-family: 'comicsansms', sans-serif;
+    text-align: center;
+}
