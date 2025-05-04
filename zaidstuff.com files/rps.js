@@ -16,5 +16,5 @@ function rps(playerChoice) {
     else {
         result += "You lose!";
     }
-    document.getElementById('result').value = result;
+    document.getElementById('result').i = result;
 }
