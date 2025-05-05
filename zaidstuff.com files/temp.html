@@ -10,16 +10,19 @@
 <body>
     <!-- Create input field -->
     <div id="input">
-      <label>Fahrenheit:</label><input id = "fahr" type = "number" size = "20" onkeyup = "convertTemp('fahr')">
+      <label>Fahrenheit:</label><input id = "fahr" type = "number" size = "20" >
     </div>
+    <button type = "button" onclick="convertTemp('fahr')">Convert</button>
     <!-- Create input field -->
     <div id = "input">
-      <label>Celsius:</label><input id = "cels" type = "number" size = "20" onkeyup ="convertTemp('cels')">
+      <label>Celsius:</label><input id = "cels" type = "number" size = "20" >
     </div>
+    <button type = "button" onclick="convertTemp('cels')">Convert</button>
     <!-- Create input field -->
     <div id = "input">
-      <label>Kelvin:</label><input id = "kel" type = "number" size = "20" onkeyup ="convertTemp('kel')">
+      <label>Kelvin:</label><input id = "kel" type = "number" size = "20" >
     </div>
+    <button type = "button" onclick="convertTemp('kel')">Convert</button>
     <!-- Create button -->
     <button type = "button" onclick="reset()">Clear Fields</button>
     
