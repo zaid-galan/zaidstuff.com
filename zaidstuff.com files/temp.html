@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempurature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+    <script src="temp.js"></script>
+</head>
+<body>
+    <!-- Create input field -->
+    <div id="input">
+      <label>Fahrenheit:</label><input id = "fahr" type = "number" size = "20" onkeyup = "convertTemp('fahr')">
+    </div>
+    <!-- Create input field -->
+    <div id = "input">
+      <label>Celsius:</label><input id = "cels" type = "number" size = "20" onkeyup ="convertTemp('cels')">
+    </div>
+    <!-- Create input field -->
+    <div id = "input">
+      <label>Kelvin:</label><input id = "kel" type = "number" size = "20" onkeyup ="convertTemp('kel')">
+    </div>
+    <!-- Create button -->
+    <button type = "button" onclick="reset()">Clear Fields</button>
+    
+    <!-- Start Javascript code -->
+    <script src="main.js"></script>
+    </body>
+</html>
