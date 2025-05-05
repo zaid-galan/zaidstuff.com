@@ -20,7 +20,7 @@ function addTask(){
         this.tasko.lastChild.innerHTML = "x";
         this.tasko.lastChild.setAttribute("onclick", "deleteTask()");
         this.tasko.setAttribute("id", id);
-        this.tasko.appendParent(document.getElementById("taskList"));
+        document.getElementById("taskList").appendChild(this.tasko);
     }
     taskId = "task" + Math.floor(Math.random() * 1000);
     var newTask = new taski(inputVal, taskId);
@@ -30,7 +30,7 @@ function deleteTask() {
     localStorage.removeItem(taskId);
     document.getElementById(taskId).remove();
 }
-function cleaTasks() {
+function clearTasks() {
     localStorage.clear();
     document.getElementById("taskList").innerHTML = "";
 }
