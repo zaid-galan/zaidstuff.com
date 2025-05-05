@@ -11,7 +11,7 @@ function addTask(){
     }
     localStorage.setItem("task", inputVal);
     const task = localStorage.getItem("task");
-    function task(text, id){
+    function taski(text, id){
         this.text = text;
         this.id = id;
         this.tasko = document.createElement("p");
@@ -23,7 +23,7 @@ function addTask(){
         this.tasko.appendParent(document.getElementById("taskList"));
     }
     taskId = "task" + Math.floor(Math.random() * 1000);
-    var newTask = new task(inputVal, taskId);
+    var newTask = new taski(inputVal, taskId);
 }
 function deleteTask() {
     var taskId = this.getAttribute("id");
@@ -33,4 +33,15 @@ function deleteTask() {
 function clearAllTasks() {
     localStorage.clear();
     document.getElementById("taskList").innerHTML = "";
+}
+function toggleTheme() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var button = document.getElementById("themeButton");
+    if (element.classList.contains("dark-mode")) {
+        button.innerHTML = "Light Mode";
+    } else {
+        button.innerHTML = "Dark Mode";
+    }
+    element
 }
