@@ -1,11 +1,12 @@
+localStorage.setItem("task", inputVal);
+    const task = localStorage.getItem("task");
+    var taskId = "task" + Math.floor(Math.random() * 1000);
 function addTask(){
     var inputVal = document.getElementById("taskInput").value;
     if (inputVal === "") {
         alert("Please enter a task.");
         return;
     }
-    localStorage.setItem("task", inputVal);
-    const task = localStorage.getItem("task");
     function task(text, id){
         this.text = text;
         this.id = id;
@@ -19,9 +20,13 @@ function addTask(){
     }
     var taskId = "task" + Math.floor(Math.random() * 1000);
     var newTask = new task(inputVal, taskId);
-    function deleteTask() {
-        var taskId = this.getAttribute("id");
-        localStorage.removeItem(taskId);
-        document.getElementById(taskId).remove();
-    }
+}
+function deleteTask() {
+    var taskId = this.getAttribute("id");
+    localStorage.removeItem(taskId);
+    document.getElementById(taskId).remove();
+}
+function clearAllTasks() {
+    localStorage.clear();
+    document.getElementById("taskList").innerHTML = "";
 }
