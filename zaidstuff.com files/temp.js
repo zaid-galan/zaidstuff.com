@@ -1,7 +1,7 @@
 function convertTemp(degrees){
         var x = 0;
         var y = 0;
-        if (degrees == "fahrenheit") {
+        if (degrees == "fahr") {
           x = (document.getElementById("fahr").value - 32) * 5 / 9;
           x = x.toFixed(2);
           document.getElementById("cels").value = x;
@@ -12,7 +12,7 @@ function convertTemp(degrees){
             document.getElementById("cels").value = '';
             document.getElementById("kel").value = '';
           }
-       else if(degrees == "celsius"){
+       else if(degrees == "cels"){
           x = document.getElementById("cels").value * 9 / 5 + 32;
           x = x.toFixed(2);
           document.getElementById("fahr").value = x;
@@ -24,7 +24,7 @@ function convertTemp(degrees){
             document.getElementById("kel").value = '';
           }
         }
-        else if(degrees == "kelvin"){
+        else if(degrees == "kel"){
           x = (document.getElementById("kel").value - 273) * 9 / 5 + 32;
           x = x.toFixed(2);
           document.getElementById("fahr").value = x;
@@ -34,9 +34,8 @@ function convertTemp(degrees){
             if(document.getElementById("kel").value == ''){
             document.getElementById("fahr").value = '';
             document.getElementById("cels").value = '';
-          }
-        }
-        }
+            }
+    }
 }
 function reset(){
     document.getElementById("fahr").value = '';
