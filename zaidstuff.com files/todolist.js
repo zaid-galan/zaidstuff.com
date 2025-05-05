@@ -26,7 +26,6 @@ function addTask(){
     var newTask = new taski(inputVal, taskId);
 }
 function deleteTask() {
-    var taskId = this.getAttribute("id");
     localStorage.removeItem(taskId);
     document.getElementById(taskId).remove();
 }
