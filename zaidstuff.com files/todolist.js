@@ -30,7 +30,7 @@ function deleteTask() {
     localStorage.removeItem(taskId);
     document.getElementById(taskId).remove();
 }
-function clearAllTasks() {
+function cleaTasks() {
     localStorage.clear();
     document.getElementById("taskList").innerHTML = "";
 }
