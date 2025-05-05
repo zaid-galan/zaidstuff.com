@@ -1,5 +1,4 @@
 function convertTemp(degrees){
-    if (event.keyCode == 13){
         var x = 0;
         var y = 0;
         if (degrees == "fahrenheit") {
@@ -38,7 +37,6 @@ function convertTemp(degrees){
           }
         }
         }
-          }
 }
 function reset(){
     document.getElementById("fahr").value = '';
