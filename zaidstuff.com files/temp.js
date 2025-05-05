@@ -36,7 +36,7 @@ function convertTemp(degrees){
             document.getElementById("cels").value = '';
             }
     }
-}
+}}
 function reset(){
     document.getElementById("fahr").value = '';
     document.getElementById("cels").value = '';
