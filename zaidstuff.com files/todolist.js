@@ -5,10 +5,6 @@
     var taskId;
 function addTask(taskNum){
     var inputVal = document.getElementById("taskInput").value;
-    if (inputVal === "") {
-        alert("Please enter a task.");
-        return;
-    }
     localStorage.setItem("task", inputVal);
     function taski(text, id){
         this.text = text;
@@ -23,17 +19,10 @@ function addTask(taskNum){
     }
     taskId = "task" + Math.floor(Math.random() * 1000);
     var newTask = new taski(inputVal, taskId);
-    var taskList = document.getElementById("taskList").childElementCount;
-    window.onload = function() {
-        for (var i = 0; i < taskList; i++) {
-            var task = localStorage.getItem("task" + i);
-            if (task) {
-                var taskId = "task" + i;
-                var newTask = new taski(task, taskId);
-                document.getElementById("taskList").appendChild(newTask.tasko);
-            }
-        }
-    };
+    if (inputVal === "") {
+        const tasklo = localStorage.getItem("task");
+        var localTask = new taski(tasklo, taskId);
+    }
 }
 function deleteTask() {  
     localStorage.removeItem(taskId);
@@ -53,4 +42,8 @@ function toggleTheme() {
         button.innerHTML = "Dark Mode";
     }
     element
+}
+window.onload = function() {
+    var taskList = document.getElementById("taskList").childElementCount;
+    addTask(taskList);
 }
