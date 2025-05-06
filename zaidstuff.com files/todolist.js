@@ -21,7 +21,7 @@ function addTask(taskNum){
     var newTask = new taski(inputVal, taskId);
     if (inputVal === "") {
         const tasklo = localStorage.getItem("task");
-        var localTask = new taski(String(ta), taskId);
+        var localTask = new taski(String(tasklo), taskId);
     }
 }
 function deleteTask() {  
