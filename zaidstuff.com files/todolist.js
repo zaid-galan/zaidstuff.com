@@ -22,7 +22,10 @@ function addTask(taskNum){
     if (inputVal === "") {
         var tasklo = JSON.parse(localStorage.getItem("task")) || [];
         var localTask = new taski(String(tasklo), taskId);
+    } else {
+        var newTask = new taski(inputVal, taskId);
     }
+    document.getElementById("taskInput").value = "";
 }
 function deleteTask() {  
     localStorage.removeItem(taskId);
@@ -41,7 +44,6 @@ function toggleTheme() {
     } else {
         button.innerHTML = "Dark Mode";
     }
-    element
 }
 window.onload = function() {
     var taskList = document.getElementById("taskList").childElementCount;
