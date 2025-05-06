@@ -18,7 +18,6 @@ function addTask(taskNum){
         document.getElementById("taskList").appendChild(this.tasko);
     }
     taskId = "task" + Math.floor(Math.random() * 1000);
-    var newTask = new taski(inputVal, taskId);
     if (inputVal === "") {
         var tasklo = JSON.parse(localStorage.getItem("task")) || [];
         var localTask = new taski(String(tasklo), taskId);
