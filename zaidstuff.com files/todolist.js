@@ -3,14 +3,13 @@
 // The tasks are stored in the local storage of the browser, so they persist even after refreshing the page.
 // The code uses basic HTML elements and JavaScript functions to create the functionality.
     var taskId;
-function addTask(){
+function addTask(taskNum){
     var inputVal = document.getElementById("taskInput").value;
     if (inputVal === "") {
         alert("Please enter a task.");
         return;
     }
     localStorage.setItem("task", inputVal);
-    const task = localStorage.getItem("task");
     function taski(text, id){
         this.text = text;
         this.id = id;
@@ -24,8 +23,19 @@ function addTask(){
     }
     taskId = "task" + Math.floor(Math.random() * 1000);
     var newTask = new taski(inputVal, taskId);
+    var taskList = document.getElementById("taskList").childElementCount;
+    window.onload = function() {
+        for (var i = 0; i < taskList; i++) {
+            var task = localStorage.getItem("task" + i);
+            if (task) {
+                var taskId = "task" + i;
+                var newTask = new taski(task, taskId);
+                document.getElementById("taskList").appendChild(newTask.tasko);
+            }
+        }
+    };
 }
-function deleteTask() {
+function deleteTask() {  
     localStorage.removeItem(taskId);
     document.getElementById(taskId).remove();
 }
