@@ -243,7 +243,7 @@ input{
     color: blue;
 
 }
-iframe[src*="todolist.html"]{
-    width: 20%;
+iframe[src="todolist.html"]{
+    width: 326px;
     height: 500px;
 }
