@@ -12,5 +12,5 @@ function webpageOpen(){
     window.open(URL,'Popup','top=0,left=0,width=1920,height=1080');}
 }
 function change(){
-    document.getElementsByTagName("body").style = 'background:url(MonolithAttack18.gif);';
+    document.getElementById("body").style = 'background:url(MonolithAttack18.gif);';
 }
