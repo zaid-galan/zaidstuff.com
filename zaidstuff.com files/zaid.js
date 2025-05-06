@@ -12,5 +12,8 @@ function webpageOpen(){
     window.open(URL,'Popup','top=0,left=0,width=1920,height=1080');}
 }
 function change(){
-    document.body.setAttribute('style','background:url(MonolithAttack18.gif);');
+    document.body.setAttribute('style','background:url(MonolithAttack18.gif);background-size:cover;');
+    document.getElementById('bar').setAttribute('style','background-color:rgba(0,0,0,0.5);color:white;');
+    document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
+    document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5);color:white;');
 }
