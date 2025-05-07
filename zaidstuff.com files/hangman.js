@@ -20,8 +20,8 @@ function fill(char, length) {
 String.prototype.replaceAt = function(index, replacement) {
     return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
+const word = getRandomWord();
 function guessLetter(letter){
-    const word = getRandomWord();
     var guessedLetters = [];
     var wordLength = word.length;
     var guessedWord = fill('_', wordLength);
