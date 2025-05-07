@@ -43,3 +43,7 @@ button.letter-button{
     margin: 4px 2px;
     cursor: pointer;
 }
+button.letter-button:hover{
+    background-color: #ff9b05;
+    color: black;
+}
