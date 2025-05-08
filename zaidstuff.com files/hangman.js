@@ -24,7 +24,7 @@ const word = getRandomWord();
 function guessLetter(letter){
     var guessedLetters = [];
     var wordLength = word.length;
-    var guessedWord = fill('_', wordLength);
+    var guessedWord = fill('-', wordLength);
     var remainingGuesses = 6;
     if(word.includes(letter)){
         guessedWord.replaceAt(word.indexOf(letter), letter);
@@ -35,8 +35,9 @@ function guessLetter(letter){
     document.getElementById('word').innerHTML = guessedWord;
     if(remainingGuesses === 0){
         document.getElementById('word').innerHTML = "Game Over! The word was: " + word;
-    } else if(!guessedWord.includes('_')){
+    } else if(!guessedWord.includes('-')){
         document.getElementById('word').innerHTML = "You guessed the word: " + word + "! Remaining guesses: " + remainingGuesses;
     }
     document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
+    document.getElementById('guessedLetters').innerHTML = "Guessed letters: " + guessedLetters.join(', ');
 }
