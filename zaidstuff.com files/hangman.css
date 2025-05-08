@@ -8,7 +8,7 @@ body{
     justify-content: center;
 }
 button{
-    background-color: #ca5f21;
+    background-color: #ff5e00;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -47,3 +47,4 @@ button.letter-button:hover{
     background-color: #ff9b05;
     color: black;
 }
+
