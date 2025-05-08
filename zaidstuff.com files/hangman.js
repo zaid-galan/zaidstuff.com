@@ -20,7 +20,27 @@ function fill(char, length) {
 String.prototype.replaceAt = function(index, replacement) {
     return this.substring(0, index) + replacement + this.substring(index + replacement.length);
 }
+var wordLength = 0;
+var guessedWord = '';
+var remainingGuesses = 0;
+var guessedLetters = [];
 const word = getRandomWord();
+function  initialize() {
+    wordLength = word.length;
+    guessedWord = fill('-', wordLength);
+    remainingGuesses = 6;
+    guessedLetters = [];
+    document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
+}
+function resetGame() {
+    word = getRandomWord();
+    initialize();
+    document.getElementById('word').innerHTML = guessedWord;
+    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.join(', ');
+}
+window.onload = function() {
+    initialize();
+}   
 function guessLetter(letter){
     var guessedLetters = [];
     var wordLength = word.length;
@@ -38,6 +58,5 @@ function guessLetter(letter){
     } else if(!guessedWord.includes('-')){
         document.getElementById('word').innerHTML = "You guessed the word: " + word + "! Remaining guesses: " + remainingGuesses;
     }
-    document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
-    document.getElementById('guessedLetters').innerHTML = "Guessed letters: " + guessedLetters.join(', ');
+    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.join(', ');
 }
