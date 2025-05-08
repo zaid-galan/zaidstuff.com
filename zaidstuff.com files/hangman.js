@@ -58,5 +58,6 @@ function guessLetter(letter){
     } else if(!guessedWord.includes('-')){
         document.getElementById('word').innerHTML = "You guessed the word: " + word + "! Remaining guesses: " + remainingGuesses;
     }
-    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.join(', ');
+    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.toString();
+    document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
 }
