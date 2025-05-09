@@ -10,6 +10,9 @@ function generate(){
     const randomNum5 = Math.floor(Math.random() * 1004);
     const randomNum6 = Math.floor(Math.random() * 1004);
     const randomNum7 = Math.floor(Math.random() * 1004);
+    if (name1.length < 1 || name2.length < 1 || website.length < 1) {
+        alert("Please fill in all the fields.");
+    }
     if (randomNum1 === 1004) {
         randomNum1 = '&';
     } else if (randomNum1 === 1003) {
