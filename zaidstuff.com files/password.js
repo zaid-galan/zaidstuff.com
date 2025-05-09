@@ -161,7 +161,7 @@ function generate(){
     } else if (randomNum7 === 995) {
         randomNum7 = '*';
     }
-    const password = `${website}${randomNum1}${name1}${randomNum2}${name2}${randomNum3}${name3}${randomNum4}${randomNum5}${randomNum6}${randomNum7}`;
+    const password = `${website}${randomNum1}${name1}${randomNum1}${name2}${randomNum3}${name3}${randomNum4}${randomNum5}${randomNum6}${randomNum7}`;
     document.getElementById("website").value = "";{randomNum7}
     document.getElementById("name1").value = "";
     document.getElementById("name2").value = "";
@@ -193,4 +193,17 @@ function showPassword() {
     } else {
         passwordField.type = "password";
     }
+}
+function shortenPassword() {
+    const passwordField = document.getElementById("password");
+    const password = passwordField.value;
+    var hobby = prompt("enter a hobby", '');
+    var initials = document.getElementById("name1").value.charAt(0) + document.getElementById("name2").value.charAt(0);
+    var newPassword = `${hobby}${initials}`;
+    if (hobby.length < 1 || initials.length < 1) {
+        alert("Please enter first name and last name.");
+        return;
+    }
+    document.getElementById("password").value = newPassword;
+    passwordField.type = "text";
 }
