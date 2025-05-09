@@ -172,3 +172,13 @@ function copyPassword() {
         alert("Failed to copy password.");
     });
 }
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark-theme");
+    const themeButton = document.getElementById("theme-button");
+    if (body.classList.contains("dark-theme")) {
+        themeButton.innerHTML = "Light Theme";
+    } else {
+        themeButton.innerHTML = "Dark Theme";
+    }
+}
