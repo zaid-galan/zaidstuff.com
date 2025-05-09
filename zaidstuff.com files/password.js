@@ -199,11 +199,14 @@ function shortenPassword() {
     const password = passwordField.value;
     var hobby = prompt("enter a hobby", '');
     var initials = document.getElementById("name1").value.charAt(0) + document.getElementById("name2").value.charAt(0);
-    var newPassword = `${hobby}${initials}`;
     if (hobby.length < 1 || initials.length < 1) {
         alert("Please enter first name and last name.");
         return;
     }
+    var randomNum1 = Math.floor(Math.random() * 99);
+    var randomNum2 = Math.floor(Math.random() * 99);
+    var randomNum3 = Math.floor(Math.random() * 99);
+    var newPassword = `${hobby}${randomNum1}${initials}${randomNum2}${randomNum3}`;
     document.getElementById("password").value = newPassword;
     passwordField.type = "text";
 }
