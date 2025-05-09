@@ -12,6 +12,7 @@ function generate(){
     const randomNum7 = Math.floor(Math.random() * 1004);
     if (name1.length < 1 || name2.length < 1 || website.length < 1) {
         alert("Please fill in all the fields.");
+        return;
     }
     if (randomNum1 === 1004) {
         randomNum1 = '&';
