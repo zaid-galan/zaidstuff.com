@@ -161,8 +161,8 @@ function generate(){
     } else if (randomNum7 === 995) {
         randomNum7 = '*';
     }
-    const password = `${website}${name1}${randomNum1}${name2}${randomNum2}${name3}${randomNum3}${randomNum4}${randomNum5}${randomNum6}${randomNum7}`;
-    document.getElementById("website").value = "";
+    const password = `${website}${randomNum1}${name1}${randomNum2}${name2}${randomNum3}${name3}${randomNum4}${randomNum5}${randomNum6}${randomNum7}`;
+    document.getElementById("website").value = "";{randomNum7}
     document.getElementById("name1").value = "";
     document.getElementById("name2").value = "";
     document.getElementById("name3").value = "";
