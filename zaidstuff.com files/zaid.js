@@ -17,3 +17,21 @@ function change(){
     document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
     document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5) !important;color:white;');
 }
+function change2(){
+    document.body.setAttribute('style','background:url(texture6.jpg);background-repeat:repeat;background-size:100%;');
+    document.getElementById('bar').setAttribute('style','background-color:rgba(0,0,0,0.5);color:white;');
+    document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
+    document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5) !important;color:white;');
+}
+function change3(){
+    document.body.setAttribute('style','background:url(untitled.svg);background-repeat:repeat;background-size:25%;');
+    document.getElementById('bar').setAttribute('style','background-color:rgba(0,0,0,0.5);color:white;');
+    document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
+    document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5) !important;color:white;');
+}
+function change4(){
+    document.body.setAttribute('style','background:url(designer(7).jpeg);background-repeat:repeat;background-size:25%;');
+    document.getElementById('bar').setAttribute('style','background-color:rgba(0,0,0,0.5);color:white;');
+    document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
+    document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5) !important;color:white;');
+}
