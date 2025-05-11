@@ -223,7 +223,7 @@ function simplify(){
     if (randomSymbol === 0) {
         randomSymbol = '!';
     } else if (randomSymbol === 1) {
-        randomSymbol = '@';
+        randomSymbol = '=';
     } else if (randomSymbol === 2) {
         randomSymbol = '#';
     } else if (randomSymbol === 3) {
