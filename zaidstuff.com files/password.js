@@ -214,6 +214,7 @@ function simplify(){
     const passwordField = document.getElementById("password");
     const password = passwordField.value;
     var word = prompt("enter a word", '');
+    word.charAt(0).toUpperCase();
     var randomNum = Math.floor(Math.random() * 99);
     var randomSymbol = Math.floor(Math.random() * 10);
     if (word.length < 1) {
