@@ -210,3 +210,36 @@ function shortenPassword() {
     document.getElementById("password").value = newPassword;
     passwordField.type = "text";
 }
+function simplify(){
+    const passwordField = document.getElementById("password");
+    const password = passwordField.value;
+    var word = prompt("enter a word", '');
+    var randomNum = Math.floor(Math.random() * 99);
+    var randomSymbol = Math.floor(Math.random() * 10);
+    if (word.length < 1) {
+        alert("Please enter a word.");
+        return;
+    }
+    if (randomSymbol === 0) {
+        randomSymbol = '!';
+    } else if (randomSymbol === 1) {
+        randomSymbol = '@';
+    } else if (randomSymbol === 2) {
+        randomSymbol = '#';
+    } else if (randomSymbol === 3) {
+        randomSymbol = '$';
+    } else if (randomSymbol === 4) {
+        randomSymbol = '%';
+    } else if (randomSymbol === 5) {
+        randomSymbol = '^';
+    } else if (randomSymbol === 6) {
+        randomSymbol = '&';
+    } else if (randomSymbol === 7) {
+        randomSymbol = '*';
+    } else if (randomSymbol === 8) {
+        randomSymbol = '.';
+    } else if (randomSymbol === 9) {
+        randomSymbol = '?';
+    }
+    passwordField.value = `${word}${randomNum}${randomSymbol}`;
+}
