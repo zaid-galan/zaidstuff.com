@@ -21,8 +21,10 @@ function showPassword() {
     const passwordField = document.getElementById("password");
     if (passwordField.type === "password") {
         passwordField.type = "text";
+        document.getElementById("showBtn").innerHTML = "Hide";
     } else {
         passwordField.type = "password";
+        document.getElementById("showBtn").innerHTML = "Show";
     }
 }
 function shortenPassword() {
