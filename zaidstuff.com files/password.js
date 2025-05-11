@@ -432,5 +432,5 @@ function simplify(){
     } else if (randomSymbol === 9) {
         randomSymbol = '?';
     }
-    passwordField.value = `${word}${randomNum}${word2}${randomNum2}${randomSymbol}.pwd`;
+    passwordField.value = `${word}${randomNum}${word2}${randomNum2}${randomSymbol}`;
 }
