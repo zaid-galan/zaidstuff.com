@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quiz Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <h1>Quiz Game</h1>
+        <p>Difficulty: Beginner</p>
+        <input type="range" id="difficulty" min="1" max="3" value="1">
+        <input type="range" id="questionCount" min="1" max="10" value="5">
+        <button onclick="initialize()" id="startQuiz">Start Quiz</button>
+        <p id="question"></p>
+        <div id="options">
+           <input type="checkbox" id="option1" name="option1" value="Option 1">
+            <input type="checkbox" id="option2" name="option2" value="Option 2">
+            <input type="checkbox" id="option3" name="option3" value="Option 3">
+            <input type="checkbox" id="option4" name="option4" value="Option 4">
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>
