@@ -14,16 +14,3 @@ function spin(){
     var randomNum = Math.floor(Math.random() * optionNum);
     document.getElementById("result").innerHTML = options[randomNum];
 }
-function clear(){
-    document.getElementById("result").innerHTML = "";
-    document.getElementById("option0").value = "";
-    document.getElementById("option1").value = "";
-    document.getElementById("option2").value = "";
-    document.getElementById("option3").value = "";
-    document.getElementById("option4").value = "";
-    document.getElementById("option5").value = "";
-    document.getElementById("option6").value = "";
-    document.getElementById("option7").value = "";
-    document.getElementById("option8").value = "";
-    document.getElementById("option9").value = "";
-}
