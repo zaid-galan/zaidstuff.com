@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img.right{
+    right:0;
+    margin: 0;
+    border-left: 3px solid #000;
+    height: 100%;
+    width: 43%;
+}
+img.left{
+    left: 0;
+    margin: 0;
+    border-right: 3px solid #000;
+    height: 43%;
+    width: 43%;
+}
+img.bottom{
+    bottom: 0;
+    margin: 0;
+    border-top: 3px solid #000;
+}
+img.top{
+    top: 0;
+    margin: 0;
+    border-bottom: 3px solid #000;
+}
