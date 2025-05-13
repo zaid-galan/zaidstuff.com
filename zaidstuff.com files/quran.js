@@ -7,6 +7,7 @@ function playAyah(){
     if (event.keyCode === 13){    audiop.src = audio.src;
         audiop.setAttribute('controls', 'true');
         audiop.setAttribute('autoplay', 'true');
+        document.getElementById("p").appendChild(audiop);
     }
 }
 function toggleLoop() {
