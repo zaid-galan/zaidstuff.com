@@ -7,7 +7,7 @@ img.right{
     margin: 0;
     border-left: 3px solid #000;
     height: 100%;
-    width: 43%;
+    max-width: 43% !important;
 }
 img.left{
     left: 0;
