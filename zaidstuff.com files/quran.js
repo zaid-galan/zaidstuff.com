@@ -13,9 +13,9 @@ function playAyah(){
 function toggleLoop() {
     if (audiop.loop) {
         audiop.loop = false;
-        document.getElementById("loopButton").innerText = "Enable Loop";
+        document.getElementById("loopButton").innerHTML = "Enable Loop";
     } else {
         audiop.loop = true;
-        document.getElementById("loopButton").innerText = "Disable Loop";
+        document.getElementById("loopButton").innerHTML = "Disable Loop";
     }
 }
