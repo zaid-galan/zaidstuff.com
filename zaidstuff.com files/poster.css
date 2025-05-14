@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: url(sand.png) no-repeat center center fixed;
     background-size: cover;
+    overflow: hidden;
 }
 img.right{
     float: right;
