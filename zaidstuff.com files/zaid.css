@@ -21,7 +21,8 @@ a {
     font-size: 14px;
     color: white;
     font-family: sans-serif;
-    text-decoration: none;margin: 7px
+    text-decoration: none;margin: 7px;
+    height: auto;
   }a:hover {
     color: white;
     background: #5500ff;
