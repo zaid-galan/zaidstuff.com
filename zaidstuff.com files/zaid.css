@@ -13,7 +13,7 @@ nav {
     left: 0;
     right: 0;
 }
-a {
+a.nav-button, img {
     padding: 5px 10px;
     background: red;
     box-shadow: 0 0 3px 3px green;
@@ -23,7 +23,7 @@ a {
     font-family: sans-serif;
     text-decoration: none;margin: 7px;
     height: auto;
-  }a:hover {
+  }a.nav-button:hover {
     color: white;
     background: #5500ff;
     border-radius: 50px;
