@@ -5,7 +5,7 @@
       <link rel="stylesheet" href="q.css">
   </head>
   <body>
-      <input name="ayah" maxlength="6" onkeyup="playAyah()" id="input">
+      <input name="ayah" onkeyup="playVideo()" id="input">
       <button id="loopButton" onclick="toggleLoop()">toggle Loop</button>
       <p id="p">
         type the video url in the input box and press enter to play it
@@ -13,7 +13,7 @@
       </p>
     <script>
         var videop = document.createElement("video");
-function playAyah(){
+function playVideo(){
     var inputValue = document.getElementById("input").value;
     if (event.keyCode === 13){    videop.src = inputValue;
         videop.setAttribute('controls', 'true');
