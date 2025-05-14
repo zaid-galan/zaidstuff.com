@@ -2,4 +2,7 @@ body{
     margin:0;
     background-color: rgba(24, 24, 24, 0.938);
     color: beige;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
