@@ -6,6 +6,8 @@ body{
     justify-content: center;
     text-align: center;
     line-height: 23px;
+    overflow-x: hidden;
+}
 nav {
     background-color: #7700ff;
     padding: 10px;
