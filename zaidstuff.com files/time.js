@@ -6,4 +6,6 @@ function displayTime() {
     var fullTime = ${hours}:${minutes}:${seconds};
     document.getElementById('time').innerHTML = fullTime;
 }
+window.onload = function() {
 setInterval(displayTime, 1000);
+}
