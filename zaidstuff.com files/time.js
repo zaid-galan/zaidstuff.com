@@ -3,9 +3,8 @@ function displayTime() {
     var hours = now.getHours();
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
-    var fullTime = ${hours}:${minutes}:${seconds};
+    var fullTime = `${hours.toString()}:${minutes.toString()}:${seconds.toString()}`;
     document.getElementById('time').innerHTML = fullTime;
 }
-window.onload = function() {
+
 setInterval(displayTime, 1000);
-}
