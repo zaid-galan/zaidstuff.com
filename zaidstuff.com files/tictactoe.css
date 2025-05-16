@@ -45,3 +45,10 @@ body{
 table{
     border-collapse: collapse;
 }
+div.game-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
