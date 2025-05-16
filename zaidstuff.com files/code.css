@@ -16,3 +16,10 @@ div.reminder{
     border-radius: 20px;
     float: right;
 }
+body{
+    background: linear-gradient(to right, #ff00a8, #7f00ff, #0000ff, #007eff, #00e1ff, #00ffb5, #00ff2f, #a8ff00, #ffec00, #ff8400, #ff0000);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #000;
+}
