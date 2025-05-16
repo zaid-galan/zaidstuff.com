@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 100px;
+}
+#0{
+    border-top: none;
+    border-left: none;
+}
+#1{
+    border-top: none;
+}
+#2{
+    border-top: none;
+    border-right: none;
+}
+#3{
+    border-left: none;
+}
+#4{
+
+}
+#5{
+    border-right: none;
+}
+#6{
+    border-left: none;
+    border-bottom: none;
+}
+#7{
+    border-bottom: none;
+}
+#8{
+    border-bottom: none;
+    border-right: none;
+}
+table{
+    border-collapse: collapse;
+}
