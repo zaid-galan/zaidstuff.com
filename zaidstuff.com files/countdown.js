@@ -1,7 +1,7 @@
 function display(){
     const now = new Date();
     var day = now.getDate();
-var daysUntilBeach = 17 - day;
+var daysUntilBeach = 16 - day;
 var month = now.getMonth() + 1;
 var monthsUntilBeach = 5 - month;
 var hour = now.getHours();
