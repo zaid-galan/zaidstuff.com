@@ -7,6 +7,47 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.container{
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    
+}
+div.active{
+    padding: 2px;
+    background: red;
+    color: white;
+    border: 2px outset green;
+    padding: 5px 10px;
+  background: red;
+  border:2px outset green;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;margin: 4px;
+}
+.dropdown{
+    position: absolute;
+    width: 100%;
+    border: 2px outset green;
+    background: red;
+    z-index: 1;
+    display: none;
+    text-align: center;
+    line-height:40px !important
+}
+a.option{
+    text-decoration: none;
+}
+.dropdown a.option:hover{
+    color: white;
+  background: #5500ff;
+
+}
+div.container:hover div.dropdown{
+    display: block;
+}
 nav {
     background:linear-gradient(to bottom, #ff3,#1F9999,pink) ;
     padding: 10px;
