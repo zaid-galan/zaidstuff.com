@@ -51,15 +51,16 @@ function guessLetter(letter){
             guessedWord.replaceAt(word.indexOf(letter), letter);
         }
     } else{
-        remainingGuesses--;
+        remainingGuesses -= 1;
         guessedLetters.push(letter);
     }
+    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.toString();
+    document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
     document.getElementById('word').innerHTML = guessedWord;
     if(remainingGuesses === 0){
         document.getElementById('word').innerHTML = "Game Over! The word was: " + word;
     } else if(!guessedWord.includes('-')){
         document.getElementById('word').innerHTML = "You guessed the word: " + word + "! Remaining guesses: " + remainingGuesses;
     }
-    document.getElementById('wrong-letters').innerHTML = "Guessed letters: " + guessedLetters.toString();
-    document.getElementById('remainingGuesses').innerHTML = "Remaining guesses: " + remainingGuesses;
+    
 }
