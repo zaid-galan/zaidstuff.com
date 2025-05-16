@@ -4,6 +4,8 @@ div.p{
     font-size: medium;
     font-weight: bold;
     color: #000;
+    display:block;
+    padding: 70px;
 }
 div.reminder{
     background: linear-gradient(to right, #ff0000, #ff8400, #ffec00, #a8ff00, #00ff2f, #00ffb5, #00e1ff, #007eff, #0000ff, #7f00ff, #ff00a8);
