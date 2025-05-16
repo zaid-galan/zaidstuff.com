@@ -56,6 +56,7 @@ div.active{
     z-index: 1;
     display: none;
     text-align: center;
+    line-height:40px !important
 }
 a.option{
     text-decoration: none;
@@ -218,7 +219,7 @@ nav {
         font-family: cursive;
         color: #fff;
         text-align: center;
-        line-height: 40px;
+        line-height: 130px;
       }
 .my-button:active,.gyu:active{padding:0 0 5px 10px;
   background: #009999;
