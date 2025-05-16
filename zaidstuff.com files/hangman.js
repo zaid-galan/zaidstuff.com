@@ -47,7 +47,9 @@ function guessLetter(letter){
     var guessedWord = fill('-', wordLength);
     var remainingGuesses = 6;
     if(word.includes(letter)){
-        guessedWord.replaceAt(word.indexOf(letter), letter);
+        for (let i = 0; i < count; i++) {
+            guessedWord.replaceAt(word.indexOf(letter), letter);
+        }
     } else{
         remainingGuesses--;
         guessedLetters.push(letter);
