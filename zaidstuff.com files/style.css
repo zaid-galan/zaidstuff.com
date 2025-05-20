@@ -31,10 +31,11 @@ table {
 .container{
     position: relative;
     display: inline-block;
-    cursor: default;
+    cursor: pointer;
     
 }
 div.active{
+  height:fit-content;
     padding: 2px;
     background: red;
     color: white;
@@ -46,7 +47,8 @@ div.active{
   font-size: 14px;
   color: white;
   font-family: sans-serif;
-  text-decoration: none;margin: 4px;
+  text-decoration: none;
+  margin: 4px;
 }
 .dropdown{
     position: absolute;
@@ -56,7 +58,7 @@ div.active{
     z-index: 1;
     display: none;
     text-align: center;
-    line-height:40px !important
+    line-height:40px !important;
 }
 a.option{
     text-decoration: none;
