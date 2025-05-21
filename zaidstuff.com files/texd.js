@@ -1,5 +1,7 @@
 // Function to download a file
-function downloadFile(filename, content) {
+function downloadFile() {
+    const content = document.getElementById("fileContent").innerHTML;
+    const filename = document.getElementById("fileName").value;
     // Create a new anchor element
     const element = document.createElement('a');
     
@@ -19,8 +21,6 @@ function downloadFile(filename, content) {
     // Remove the anchor from the document
     document.body.removeChild(element);
 }
-const fileName = document.getElementById('fileName').value;
-const fileContent = document.getElementById('fileContent').value;
 document.getElementById("downloadBtn").addEventListener('click', function(){
-    downloadFile(fileName,fileContent);
+    downloadFile();
 });
