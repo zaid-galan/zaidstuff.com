@@ -21,6 +21,6 @@ function downloadFile(filename, content) {
 }
 const fileName = document.getElementById('fileName').value;
 const fileContent = document.getElementById('fileContent').value;
-document.getElementById("downloadBtn").addEventListener('click', function{
+document.getElementById("downloadBtn").addEventListener('click', function(){
     downloadFile(fileName,fileContent);
 });
