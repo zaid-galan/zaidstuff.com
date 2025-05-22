@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
-var color;63wqa345
+var color;
 function changeColor(){
     color = document.getElementById('color').value;
 }
