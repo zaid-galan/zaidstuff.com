@@ -5,6 +5,8 @@ const fileNaym = document.getElementById("filenaym").value;
 function changeColor(){
     color = document.getElementById('color').value;
 }
+ctx.fillStyle = 'black'; // Set the fill color to black
+ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the entire canvas
 setInterval(changeColor,1)
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath();
