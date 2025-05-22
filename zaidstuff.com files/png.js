@@ -1,6 +1,7 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
 var color;
+const fileNaym = document.getElementById("filenaym");
 function changeColor(){
     color = document.getElementById('color').value;
 }
@@ -33,3 +34,12 @@ canvas.addEventListener('mousemove', (event) => {
 canvas.addEventListener('mouseup', () => {
     drawing = false;
 });
+function downloadImage() {
+    const imageDataURL = canvas.toDataURL('image/png');
+    const downloadLink = document.createElement('a');
+    downloadLink.href = imageDataURL;
+    downloadLink.download = `${fileNaym}.png`; // Set the filename
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink); // Clean up
+}
