@@ -1,10 +1,6 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
 const color = document.getElementById('color').value;
-window.onload = function() {
-    ctx.fillStyle = 'black'; // Set the fill color to black
-    ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the entire canvas
-};
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath();
     ctx.moveTo(x1, y1);
