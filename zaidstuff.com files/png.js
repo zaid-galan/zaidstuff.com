@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
 var color;
-const fileNaym = document.getElementById("filenaym");
+const fileNaym = document.getElementById("filenaym").value;
 function changeColor(){
     color = document.getElementById('color').value;
 }
