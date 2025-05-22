@@ -1,6 +1,9 @@
 const canvas = document.getElementById('canvas')
 const ctx = canvas.getContext('2d');
-const color = document.getElementById('color').value;
+function changeColor(){
+    var color = document.getElementById('color').value;
+}
+setInterval(changeColor,1)
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath();
     ctx.moveTo(x1, y1);
