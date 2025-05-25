@@ -10,7 +10,7 @@ canvas.addEventListener('mousemove', function(event) {
     const rect = canvas.getBoundingClientRect(); // Get canvas position
     const mouseX = event.clientX - rect.left;    // Calculate mouse X relative to canvas
     ctx.fillStyle = 'blue';
-    ctx.fillRect(mouseX,-134,40,16)
+    ctx.fillRect(mouseX,0-134,40,16)
 });
 
 // ...existing code...
