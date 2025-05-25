@@ -162,12 +162,23 @@ custom{
 }
 body {
   background-position: bottom;
-    background-size:1920px;
+    background-size:100%;
   color:red;
   font-size: 20px;
   padding: 10px 20px;
     font-family: cursive;
-    font: comic sans mt;
+    font: comic;
+  
+}
+@media (max-width: 220px) {
+    body{
+      background: url(ver_background.jpg);
+    }
+}
+@media (min-width: 221px){
+  body{
+    background: url(hor_background.jpg);
+  }
 }
 
 
