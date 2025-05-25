@@ -168,18 +168,8 @@ body {
   padding: 10px 20px;
     font-family: cursive;
     font: comic;
-  background: rebeccapurple;
+  background: url(background.png);
 }
-/*@media (max-width: 220px) {
-    body{
-      background: url(ver_background.jpg);
-    }
-}
-@media (min-width: 221px){
-  body{
-    background: url(hor_background.jpg);
-  }
-}*/
 
 
   
