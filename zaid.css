@@ -15,7 +15,7 @@ nav {
     left: 0;
     right: 0;
 }
-a.nav-button, img.gif {
+a.nav-button, .gif {
     padding: 5px 10px;
     background: red;
     box-shadow: 0 0 3px 3px green;
