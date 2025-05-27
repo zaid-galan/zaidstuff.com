@@ -24,7 +24,8 @@
         
             var mediaRecorder;
             let audioChunks = [];
-        
+            audioElement.autoplay = true;
+            document.body.appendChild(audioElement);
             startButton.addEventListener('click', async () => {
               const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
               mediaRecorder = new MediaRecorder(stream);
