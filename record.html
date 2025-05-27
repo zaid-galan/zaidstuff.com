@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Webcam Recorder</title>
+        <title>Webcam Recorder with Audio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -19,13 +19,14 @@
             <button id="stop" disabled>Stop Recording</button>
         </div>
         <script>
-            var videoElement = document.getElementById('webcam');
-            var startButton = document.getElementById('start');
-            var stopButton = document.getElementById('stop');
+            const videoElement = document.getElementById('webcam');
+            const startButton = document.getElementById('start');
+            const stopButton = document.getElementById('stop');
+            let mediaRecorder;
             let recordedChunks = [];
 
-            // Access the webcam
-            navigator.mediaDevices.getUserMedia({ video: true })
+            // Access the webcam and microphone
+            navigator.mediaDevices.getUserMedia({ video: true, audio: true })
                 .then((stream) => {
                     // Set the video stream to the video element
                     videoElement.srcObject = stream;
@@ -48,7 +49,7 @@
                         // Create a download link
                         const a = document.createElement('a');
                         a.href = url;
-                        a.download = 'recorded-video.mp4';
+                        a.download = 'video.mp4';
                         a.click();
 
                         // Reset recorded chunks
@@ -56,7 +57,7 @@
                     };
                 })
                 .catch((error) => {
-                    console.error('Error accessing webcam:', error);
+                    console.error('Error accessing webcam or microphone:', error);
                 });
 
             // Start recording
