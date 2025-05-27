@@ -1,6 +1,6 @@
-    const startButton = document.getElementById('start');
-    const stopButton = document.getElementById('stop');
-    const audioElement = document.getElementById('audio');
+    var startButton = document.getElementById('start');
+    var stopButton = document.getElementById('stop');
+    var audioElement = document.getElementById('audio');
 
     let mediaRecorder;
     let audioChunks = [];
