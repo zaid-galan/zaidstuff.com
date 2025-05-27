@@ -22,11 +22,12 @@
             const videoElement = document.getElementById('webcam');
             const startButton = document.getElementById('start');
             const stopButton = document.getElementById('stop');
+            const audBtn = document.getElementById('audioBtn');
             let mediaRecorder;
             let recordedChunks = [];
-
+            const userMedia = { video: true, audio: true };
             // Access the webcam and microphone
-            navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+            navigator.mediaDevices.getUserMedia(userMedia)
                 .then((stream) => {
                     // Set the video stream to the video element
                     videoElement.srcObject = stream;
@@ -76,6 +77,11 @@
                     startButton.disabled = false;
                     stopButton.disabled = true;
                 }
+            });
+            audBtn.addEventListener('click', () => {
+                /*if () {
+                    
+                }*/
             });
         </script>
     </body>
