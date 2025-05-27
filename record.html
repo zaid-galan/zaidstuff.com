@@ -108,6 +108,8 @@
                     mediaRecorder.stop();
                     startButton.disabled = false;
                     stopButton.disabled = true;
+                    audioElement.autoplay = true;
+                    document.body.appendChild(audioElement);
                 }
             });
         </script>
