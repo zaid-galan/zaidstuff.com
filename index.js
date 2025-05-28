@@ -35,4 +35,3 @@ function change4(){
     document.getElementById('bar').setAttribute('placeholder','Enter URL or Command');
     document.getElementsByTagName('iframe')[0].setAttribute('style','background-color:rgba(0,0,0,0.5) !important;color:white;');
 }
-console.log(wordBank.length);

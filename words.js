@@ -1,4 +1,4 @@
-const wordBank = [
+export const wordBank = [
     // Words with at least 8 letters
     "abundance", "adventure", "algorithm", "authority", "blueprint", "boundary", "challenge", "character", 
     "community", "composure", "creativity", "dedicated", "education", "elevation", "equipment", "essential", 
@@ -20,7 +20,3 @@ const wordBank = [
     "settle", "source", "speech", "spirit", "status", "supply", "system", "target", "theory", "travel", 
     "unique", "update", "vision", "volume", "wealth", "winner", "worker", "writer"
 ];
-
-// Export the word bank for use in other files
-export default wordBank;
-console.log("Word bank loaded with", wordBank.length, "words.");
