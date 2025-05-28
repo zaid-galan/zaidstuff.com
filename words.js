@@ -22,5 +22,5 @@ const wordBank = [
 ];
 
 // Export the word bank for use in other files
-//export default wordBank;
+export default wordBank;
 console.log("Word bank loaded with", wordBank.length, "words.");
