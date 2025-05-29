@@ -25,6 +25,7 @@ a.nav-button, .gif {
     font-family: sans-serif;
     text-decoration: none;margin: 7px;
     height: auto;
+    line-height: normal;
   }a.nav-button:hover {
     color: white;
     background: #5500ff;
