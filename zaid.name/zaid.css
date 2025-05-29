@@ -38,7 +38,7 @@ header {
   padding: 20px;
   background-color: #37115d;
   color: white;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 header .profile-picture {
@@ -82,5 +82,5 @@ footer {
   width: 100%;
 }
 section#contact{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
