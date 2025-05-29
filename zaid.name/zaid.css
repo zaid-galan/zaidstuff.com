@@ -68,6 +68,11 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.project-gallery .large-gif .gif {
+  width: 400px; /* Make texd.gif larger */
+  margin-top: 20px; /* Add spacing */
+}
+
 footer {
   background-color: #5500ff;
   color: white;
@@ -75,5 +80,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+section#contact{
   margin-bottom: 20px;
 }
