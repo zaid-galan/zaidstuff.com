@@ -1,47 +1,77 @@
-body{
-    margin:0;
-    background-color: rgba(24, 24, 24, 0.938);
-    color: beige;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 23px;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  background-color: #181818;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
 }
+
 nav {
-    background-color: #7700ff;
-    padding: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-color: #5500ff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
-a.nav-button, .gif {
-    padding: 5px 10px;
-    background: red;
-    box-shadow: 0 0 3px 3px green;
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
-    font-family: sans-serif;
-    text-decoration: none;margin: 7px;
-    height: auto;
-    line-height: normal;
-  }a.nav-button:hover {
-    color: white;
-    background: #5500ff;
-    border-radius: 50px;
-    transition: all 0.4s;
-    box-shadow: 0 0 1px 5px green, 0 0 1px 10px palegoldenrod;
-  }
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1000;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    line-height: 85px;
-    width: 7%;
-}  
+
+a.nav-button {
+  padding: 10px 20px;
+  background: #7700ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+a.nav-button:hover {
+  background-color: #4400aa;
+}
+
+header {
+  padding: 20px;
+  background-color: #37115d;
+  color: white;
+}
+
+header .profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-gallery .gif {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #5500ff;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
