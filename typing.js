@@ -48,6 +48,7 @@ function timer(){
             document.getElementById('word').innerHTML = getRandomWord();
         }
     }
+    console.log(time);
     timerElement.innerHTML = time;
     if (time == 0){
         wordBank = null;
