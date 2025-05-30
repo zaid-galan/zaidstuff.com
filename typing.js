@@ -74,7 +74,7 @@ let timerPaused = false;
 setInterval(function() {
     document.getElementById('wordInput').focus();
 }, 1);
-document.addEventListener('keyup', function(event) {
+document.getElementById('wordInput').addEventListener('keyup', function(event) {
     if (event.keycode === 192) {
         if (!timerPaused) {
             pauseTimer();
@@ -83,5 +83,6 @@ document.addEventListener('keyup', function(event) {
             resumeTimer();
             timerPaused = false;
         }
+        document.getElementById('wordInput').value = '';
     }
 });
