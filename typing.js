@@ -86,3 +86,15 @@ document.getElementById('wordInput').addEventListener('keyup', function(event) {
         document.getElementById('wordInput').value = '';
     }
 });
+document.addEventListener('keyup', function(event) {
+    if (event.keycode === 192) {
+        if (!timerPaused) {
+            pauseTimer();
+            timerPaused = true;
+        } else {
+            resumeTimer();
+            timerPaused = false;
+        }
+        document.getElementById('wordInput').value = '';
+    }
+});
