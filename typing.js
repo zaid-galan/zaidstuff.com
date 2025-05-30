@@ -21,7 +21,7 @@ const wordBank = [
     "unique", "update", "vision", "volume", "wealth", "winner", "worker", "writer"
 ];
 function getRandomWord() {
-    var randomNum = Math.floor(Math.ramdom() * wordBank.length);
+    var randomNum = Math.floor(Math.random() * wordBank.length);
     const randomWord = wordBank[randomNum];
     return randomWord;
 }
