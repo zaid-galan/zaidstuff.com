@@ -71,9 +71,7 @@ function resumeTimer(){
     setInterval(timer, 1000);
 }
 let timerPaused = false;
-setInterval(function() {
-    document.getElementById('wordInput').focus();
-}, 1);
+setInterval(document.getElementById('wordInput').focus(), 1);
 document.getElementById('wordInput').addEventListener('keyup', function(event) {
     if (event.keycode === 192) {
         if (!timerPaused) {
