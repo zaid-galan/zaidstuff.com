@@ -55,12 +55,6 @@ function timer(){
     if (time == 0 || time < 0) {
         document.getElementById('word').innerHTML = '';
         document.getElementById('wordInput').value = '';
-        wordBank = null;
-        getInputWord = null;
-        getRandomWord = null;
-        timer = null;
-        checkWord = null;
-        addSeconds = null;
         window.alert("Time's up! Refresh the page to play again.");
     }
 }
