@@ -33,12 +33,15 @@ var time = 10;
 function addSeconds(){
     time += 2;
 }
+let score = 0;
 function checkWord(){
     if (getInputWord() === document.getElementById('word').innerHTML) {
         addSeconds();
         document.getElementById('word').innerHTML = getRandomWord();
         document.getElementById('wordInput').value = '';
         document.getElementById('wordInput').focus();
+        score += 1;
+        document.getElementById('score').innerHTML = score;
     }
 }
 function timer(){
