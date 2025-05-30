@@ -38,7 +38,7 @@ let score = 0;
 // Ensure focus is set explicitly when needed
 
 document.getElementById('wordInput').focus(); // Focus the input field when the page loads
-
+let timerPaused = false;
 function checkWord() {
     if (getInputWord() === document.getElementById('word').innerHTML) {
         addSeconds();
@@ -47,6 +47,16 @@ function checkWord() {
         document.getElementById('wordInput').focus(); // Focus the input field after checking the word
         score += 1;
         document.getElementById('score').innerHTML = `Score: ${score}`;
+        if (document.getElementById('wordInput').value === '`') {
+            if (!timerPaused) {
+                pauseTimer();
+                timerPaused = true;
+            } else {
+                resumeTimer();
+                timerPaused = false;
+            }
+            document.getElementById('wordInput').value = '';
+        }
     }
 }
 
@@ -78,28 +88,3 @@ function pauseTimer(){
 function resumeTimer(){
     setInterval(timer, 1000);
 }
-let timerPaused = false;
-document.getElementById('wordInput').addEventListener('keyup', function(event) {
-    if (event.keycode === 192) {
-        if (!timerPaused) {
-            pauseTimer();
-            timerPaused = true;
-        } else {
-            resumeTimer();
-            timerPaused = false;
-        }
-        document.getElementById('wordInput').value = '';
-    }
-});
-document.addEventListener('keyup', function(event) {
-    if (event.keycode === 192) {
-        if (!timerPaused) {
-            pauseTimer();
-            timerPaused = true;
-        } else {
-            resumeTimer();
-            timerPaused = false;
-        }
-        document.getElementById('wordInput').value = '';
-    }
-});
