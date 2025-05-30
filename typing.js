@@ -61,5 +61,25 @@ function timer(){
         window.alert("Time's up! Refresh the page to play again.");
     }
 }
+//pause timer function for debugging and testing; NOT FOR USERS!!!
 setInterval(checkWord, 1);
 setInterval(timer, 1000);
+function pauseTimer(){
+    clearInterval(timer);
+}
+function resumeTimer(){
+    setInterval(timer, 1000);
+}
+let timerPaused = false;
+
+document.addEventListener('keyup', function(event) {
+    if (event.keycode === 192) {
+        if (!timerPaused) {
+            pauseTimer();
+            timerPaused = true;
+        } else {
+            resumeTimer();
+            timerPaused = false;
+        }
+    }
+});
