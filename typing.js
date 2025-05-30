@@ -37,6 +37,8 @@ function checkWord(){
     if (getInputWord() === document.getElementById('word').innerHTML) {
         addSeconds();
         document.getElementById('word').innerHTML = getRandomWord();
+        document.getElementById('wordInput').value = '';
+        document.getElementById('wordInput').focus();
     }
 }
 function timer(){
@@ -50,7 +52,9 @@ function timer(){
     }
     console.log(time);
     timerElement.innerHTML = time;
-    if (time == 0){
+    if (time == 0 || time < 0) {
+        document.getElementById('word').innerHTML = '';
+        document.getElementById('wordInput').value = '';
         wordBank = null;
         getInputWord = null;
         getRandomWord = null;
