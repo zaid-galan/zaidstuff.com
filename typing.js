@@ -34,18 +34,25 @@ function addSeconds(){
     time += 2;
 }
 let score = 0;
-function checkWord(){
+// Remove the incorrect setInterval for focusing
+// Ensure focus is set explicitly when needed
+
+document.getElementById('wordInput').focus(); // Focus the input field when the page loads
+
+function checkWord() {
     if (getInputWord() === document.getElementById('word').innerHTML) {
         addSeconds();
         document.getElementById('word').innerHTML = getRandomWord();
         document.getElementById('wordInput').value = '';
-        document.getElementById('wordInput').focus();
+        document.getElementById('wordInput').focus(); // Focus the input field after checking the word
         score += 1;
         document.getElementById('score').innerHTML = `Score: ${score}`;
     }
 }
-function timer(){
+
+// Ensure focus is set explicitly in other relevant places
     var timerElement = document.getElementById('timer');
+function timer() {
     if (time > 0) {
         timerElement.innerHTML = time;
         time -= 1;
@@ -71,7 +78,6 @@ function resumeTimer(){
     setInterval(timer, 1000);
 }
 let timerPaused = false;
-setInterval(document.getElementById('wordInput').focus(), 1);
 document.getElementById('wordInput').addEventListener('keyup', function(event) {
     if (event.keycode === 192) {
         if (!timerPaused) {
