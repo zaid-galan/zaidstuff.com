@@ -2,7 +2,9 @@
 // It allows users to add tasks, delete them, and clear all tasks.
 // The tasks are stored in the local storage of the browser, so they persist even after refreshing the page.
 // The code uses basic HTML elements and JavaScript functions to create the functionality.
-    var taskId;
+function generateId() {
+    return 'task-' + Math.floor(Math.random() * 10000);
+}
 function addTask(taskNum){
     var inputVal = document.getElementById("taskInput").value;
     localStorage.setItem("task", inputVal);
@@ -17,7 +19,6 @@ function addTask(taskNum){
         this.tasko.setAttribute("id", id);
         document.getElementById("taskList").appendChild(this.tasko);
     }
-    taskId = "task" + Math.floor(Math.random() * 1000);
     if (inputVal === "") {
         var tasklo = JSON.parse(localStorage.getItem("task")) || [];
         var localTask = new taski(String(tasklo), taskId);
