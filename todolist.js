@@ -1,7 +1,15 @@
 function generateId() {
     return 'task-' + Math.floor(Math.random() * 10000);
   }
+  function editTask(id) {
+    const taskEl = document.getElementById(id);
+    const text = taskEl.textContent.replace(" x", "").trim();
+    const input = document.getElementById("taskInput");
+    input.value = text;
   
+    // Remove the task from the list
+    deleteTask(id);
+  }
   function addTask() {
     const input = document.getElementById("taskInput");
     const text = input.value.trim();
@@ -30,7 +38,7 @@ function generateId() {
   function displayTask(task) {
     const taskEl = document.createElement("p");
     taskEl.id = task.id;
-    taskEl.innerHTML = `${task.text} <button onclick="deleteTask('${task.id}')">x</button>`;
+    taskEl.innerHTML = `${task.text} <button onclick="deleteTask('${task.id}')">x</button><button onclick="editTask('${task.id}')">Edit</button>`;
     document.getElementById("taskList").appendChild(taskEl);
   }
   
