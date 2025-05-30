@@ -46,9 +46,27 @@ function generateId() {
     const body = document.body;
     const btn = document.getElementById("themeButton");
     body.classList.toggle("dark-mode");
-    btn.innerText = body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
-  }
-  
-  // Load tasks on page load
-  window.onload = loadTasks;
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    btn.innerText = isDarkMode ? "Light Mode" : "Dark Mode";
+}
+
+function loadTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    const body = document.body;
+    const btn = document.getElementById("themeButton");
+    if (savedTheme === "dark") {
+        body.classList.add("dark-mode");
+        btn.innerText = "Light Mode";
+    } else {
+        body.classList.remove("dark-mode");
+        btn.innerText = "Dark Mode";
+    }
+}
+
+// Load tasks and theme on page load
+window.onload = function() {
+    loadTasks();
+    loadTheme();
+};
   
