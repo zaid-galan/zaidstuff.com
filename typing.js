@@ -73,8 +73,6 @@ function timer() {
     console.log(time);
     timerElement.innerHTML = time;
     if (time == 0 || time < 0) {
-        document.getElementById('word').innerHTML = '';
-        document.getElementById('wordInput').value = '';
         window.alert("Time's up! Refresh the page to play again.");
         document.body.innerHTML = `<h1>Game Over</h1><p>Your final score is: ${score}</p>`;
     }
