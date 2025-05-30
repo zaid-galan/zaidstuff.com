@@ -74,6 +74,7 @@ function timer() {
     timerElement.innerHTML = time;
     if (time == 0 || time < 0) {
         window.alert("Time's up! Refresh the page to play again.");
+        time = 33333;
         document.body.innerHTML = `<h1>Game Over</h1><p>Your final score is: ${score}</p>`;
     }
 }
