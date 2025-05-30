@@ -28,7 +28,7 @@ function getRandomWord() {
 function getInputWord(){
     return document.getElementById('wordInput').value;
 }
-var time;
+var time = 10;
 
 function addSeconds(){
     time += 2;
@@ -40,9 +40,9 @@ function checkWord(){
     }
 }
 function timer(){
-    time = 10;
     var timerElement = document.getElementById('timer');
     if (time > 0) {
+        timerElement.innerHTML = time;
         time -= 1;
         if (!document.getElementById('word').innerHTML === '') {
             document.getElementById('word').innerHTML = getRandomWord();
