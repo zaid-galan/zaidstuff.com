@@ -61,7 +61,7 @@ function timer(){
         timer = null;
         checkWord = null;
         addSeconds = null;
-        alert ("Time's up!");
+        window.alert("Time's up! Refresh the page to play again.");
     }
 }
 setInterval(checkWord, 1);
