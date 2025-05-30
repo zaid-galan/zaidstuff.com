@@ -66,6 +66,7 @@ function timer() {
         document.getElementById('word').innerHTML = '';
         document.getElementById('wordInput').value = '';
         window.alert("Time's up! Refresh the page to play again.");
+        document.body.innerHTML = `<h1>Game Over</h1><p>Your final score is: ${score}</p>`;
     }
 }
 //pause timer function for debugging and testing; NOT FOR USERS!!!
