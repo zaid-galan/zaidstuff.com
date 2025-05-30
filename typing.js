@@ -41,7 +41,7 @@ function checkWord(){
         document.getElementById('wordInput').value = '';
         document.getElementById('wordInput').focus();
         score += 1;
-        document.getElementById('score').innerHTML = score;
+        document.getElementById('score').innerHTML = `Score: ${score}`;
     }
 }
 function timer(){
