@@ -3,7 +3,7 @@ function generateId() {
   }
   function editTask(id) {
     const taskEl = document.getElementById(id);
-    const text = taskEl.textContent.replace(" x", "").trim();
+    const text = taskEl.textContent.replace(" x", "").trim() && taskEl.textContent.replace(" Edit", "").trim();
     const input = document.getElementById("taskInput");
     input.value = text;
   
