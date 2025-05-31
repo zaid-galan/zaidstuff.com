@@ -20,7 +20,23 @@
     <div id="time" class="time"></div> 
   </h1>
       <div class="bar"><input onkeyup="webpageOpen()" id="bar" value="https://">
-      </div><nav class="sidebar" style="display:block;">
+        <label for="toggleTodolist" class="checkbox-label">Show To-Do List</label>
+        <input name="toggleTodolist" type="checkbox" id="checkbox" class="checkbox" onclick="toggle('todolist')" checked>
+        <label for="toggleTemp" class="checkbox-label">Show Temp Converter</label>
+        <input name="toggleTemp" type="checkbox" id="checkbox2" class="checkbox" onclick="toggle('temp')" checked>
+        <label for="toggleArea" class="checkbox-label">Show Area Converter</label>
+        <input name="toggleArea" type="checkbox" id="checkbox3" class="checkbox" onclick="toggle('area')" checked>
+        <label for="togglePassword" class="checkbox-label">Show Password Generator</label>
+        <input name="togglePassword" type="checkbox" id="checkbox4" class="checkbox" onclick="toggle('password')" checked>
+        <label for="toggleRandom" class="checkbox-label">Show Random Generator</label>
+        <input name="toggleRandom" type="checkbox" id="checkbox5" class="checkbox" onclick="toggle('random')" checked>
+        <label for="toggleQuran" class="checkbox-label">Show Quran</label>
+        <input name="toggleQuran" type="checkbox" id="checkbox6" class="checkbox" onclick="toggle('quran')" checked>
+        <label for="toggleCalculator" class="checkbox-label">Show Calculator</label>
+        <input name="toggleCalculator" type="checkbox" id="checkbox7" class="checkbox" onclick="toggle('calculator')" checked>
+        <label for="toggleSidebar" class="checkbox-label">Show Sidebar</label>
+        <input name="toggleSidebar" type="checkbox" id="checkbox8" class="checkbox" onclick="toggle('sidebar')" checked>
+      </div><nav class="sidebar" id="sidebar" style="display:block;">
      <a href="index.html" class="my-button">Home</a><br>
       <a href="photoz.html" class="my-button">My Photos</a><br>
       <a href="pets.html" class="my-button">My Pets</a><br>
@@ -28,14 +44,15 @@
       <a href="zaid.name/index.html" class="my-button">Portfolio</a><br>
           </nav>
         
-      <iframe class="m" id="iframe" title="prayerWidget" class="widget-m-top" style="width:175px;height: 358px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/4753671/shafi/5/0/15.0/15.0" style="float:right" alt="prayer times"> </iframe><iframe src="todolist.html"></iframe><iframe class="m" id="iframe" title="prayerWidget" class="widget-m-top" width="375" height="470" scrolling="yes" src="temp.html" style="float:left" alt="prayer times"> </iframe><iframe class="m" id="iframe" title="prayerWidget" class="widget-m-top" width="375" height="470" scrolling="yes" src="area.html" style="float:left" alt="prayer times"> </iframe>
-        <iframe style="width: 430px;height: 200px;" scrolling="no" src="password.html"></iframe>
-        <iframe style="width: 430px;height: 600px;" src="random.html"></iframe>
-        <iframe style="width: 430px;height: 260px;" src="quran.html"></iframe>
-        <iframe style="width: 730px;height: 900px;" src="cu.html"></iframe>
+      <iframe class="m" id="iframe" title="prayerWidget" class="widget-m-top" style="width:175px;height: 358px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/4753671/shafi/5/0/15.0/15.0" style="float:right" alt="prayer times"> </iframe><iframe id="todolist" src="todolist.html"></iframe><iframe class="m" id="temp" title="prayerWidget" class="widget-m-top" width="375" height="470" scrolling="yes" src="temp.html" style="float:left" alt="prayer times"> </iframe><iframe class="m" id="area" title="prayerWidget" class="widget-m-top" width="375" height="470" scrolling="yes" src="area.html" style="float:left" alt="prayer times"> </iframe>
+        <iframe id="password" style="width: 430px;height: 200px;" scrolling="no" src="password.html"></iframe>
+        <iframe id="random" style="width: 430px;height: 600px;" src="random.html"></iframe>
+        <iframe id="quran" style="width: 430px;height: 260px;" src="quran.html"></iframe>
+        <iframe id="calculator" style="width: 730px;height: 900px;" src="cu.html"></iframe>
       <script src="index.js"></script>
       <script src="favicon.js"></script>
       <script src="time.js"></script>
+      <script src="toggle.js"></script>
       <p>&bigstar;&mapstodown;&lurdshar;&phone;&supdot;</p>
   </body>
 </html> 
