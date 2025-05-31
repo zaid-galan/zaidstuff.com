@@ -50,7 +50,7 @@
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('zmail', 'portfolio', this)
       .then(function(response) {
          console.log("SUCCESS!", response.status, response.text);
          alert("Message sent!");
