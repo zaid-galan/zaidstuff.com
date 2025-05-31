@@ -116,7 +116,9 @@ a {
     --jjj:url(unnamed.png);
     --777:url(zaid.png);
 }
-
+iframe{
+  display: block;
+}
 div.yosh{
     width: 100px;
     height: 100px;
