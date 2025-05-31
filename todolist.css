@@ -82,10 +82,7 @@ input[type="text"]:focus{
     border-color: #4CAF50;
     outline: none;
 }
-button[onclick="deleteTask()"]{
-    color: black;
-    padding: 10px 20px;
-    border: none;
+button.taskBtn{
     border-radius: 4px;
     cursor: pointer;
     background-color: #f44336; /* Red */
@@ -94,9 +91,4 @@ button[onclick="deleteTask()"]{
 .dark-mode{
     background-color: #333;
     color: white;
-}
-button[onclick="editTask()"]{
-    background-color: #f0ad4e;
-    color: white;
-    padding: 3px;
 }

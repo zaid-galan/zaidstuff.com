@@ -38,7 +38,7 @@ function generateId() {
   function displayTask(task) {
     const taskEl = document.createElement("p");
     taskEl.id = task.id;
-    taskEl.innerHTML = `${task.text} <button onclick="deleteTask('${task.id}')">x</button><button onclick="editTask('${task.id}')">Edit</button>`;
+    taskEl.innerHTML = `${task.text} <button class="taskBtn" onclick="deleteTask('${task.id}')">x</button><button class="taskBtn" onclick="editTask('${task.id}')">Edit</button>`;
     document.getElementById("taskList").appendChild(taskEl);
   }
   
