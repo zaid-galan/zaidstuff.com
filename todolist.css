@@ -93,3 +93,8 @@ button[onclick="deleteTask()"]{
     background-color: #333;
     color: white;
 }
+button[onclick="editTask()"]{
+    background-color: #f0ad4e;
+    color: white;
+    padding: 3p;
+}
