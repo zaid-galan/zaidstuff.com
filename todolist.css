@@ -88,6 +88,8 @@ button[onclick="deleteTask()"]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    background-color: #f44336; /* Red */
+    padding: 3px;
 }
 .dark-mode{
     background-color: #333;
@@ -96,5 +98,5 @@ button[onclick="deleteTask()"]{
 button[onclick="editTask()"]{
     background-color: #f0ad4e;
     color: white;
-    padding: 3p;
+    padding: 3px;
 }
