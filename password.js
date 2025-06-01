@@ -125,11 +125,11 @@ function generate(){
     } else if (randomSymbol === 9) {
         randomSymbol = '?';
     }
-    function password() {
+    function pasword() {
         const parts = [word, randomNum, word2, randomNum2];
         const randomIndex = Math.floor(Math.random() * (parts.length + 1));
         parts.splice(randomIndex, 0, randomSymbol);
         return parts.join('');
     }
-    passwordField.value = password();
+    passwordField.value = pasword();
 }
