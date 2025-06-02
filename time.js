@@ -6,5 +6,5 @@ function displayTime() {
     var fullTime = `${hours.toString()}:${minutes.toString()}:${seconds.toString()}`;
     document.getElementById('time').innerHTML = fullTime;
 }
-
+window.onload = displayTime;
 setInterval(displayTime, 1000);
