@@ -71,7 +71,7 @@ a.option{
 div.container:hover div.dropdown{
     display: block;
 }
-#bar,  #questionnput{
+#bar,  #questionInput{
     width: 100%;
     height: 20pt
 }
