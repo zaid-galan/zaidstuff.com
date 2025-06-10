@@ -1,4 +1,4 @@
-var audiop = document.createElement("audio");
+var audiop = document.getElementById("audioPlayer");
 function playAyah(){
     var inputValue = document.getElementById("input").value;
     var audio = new Audio("https://thenoblequran.s3.amazonaws.com/recitations/khalifa/" + inputValue + ".mp3");
