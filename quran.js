@@ -1,17 +1,22 @@
 var audiop = document.getElementById("audioPlayer");
-function playAyah(){
+function playAyah() {
     var inputValue = document.getElementById("input").value;
-    var audio = new Audio("https://thenoblequran.s3.amazonaws.com/recitations/khalifa/" + inputValue + ".mp3");
-    if (audio.src === "https://thenoblequran.s3.amazonaws.com/recitations/khalifa/777777.mp3"){
-    audio.src = "5$.mp3";}
-    if (event.keyCode === 13){    audiop.src = audio.src;
-        audiop.setAttribute('controls', 'true');
-        audiop.setAttribute('autoplay', 'true');
+    var audioUrl = "https://thenoblequran.s3.amazonaws.com/recitations/khalifa/" + inputValue + ".mp3";
+    if (inputValue === "777777") {
+        audioUrl = "5$.mp3";
     }
+
+    // Set the audio source and play it
+    audiop.src = audioUrl;
+    audiop.setAttribute('controls', 'true');
+    audiop.setAttribute('autoplay', 'true');
+    audiop.play();
+
+    // Handle translations
     const translations = {
         "097001": "Verily, We sent it—(the whole Qurʾān)—down (to the lowest heaven) during the Night of Decree (for it to be revealed piecemeal thereafter)."
-    }
-    const translation = translations[inputValue];
+    };
+    const translation = translations[inputValue] || "Translation not available.";
     document.getElementById("trans").innerHTML = translation;
 }
 function toggleLoop() {
