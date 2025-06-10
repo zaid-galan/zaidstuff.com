@@ -1,4 +1,4 @@
-const audiop = document.getElementById("audioPlayer");
+const audiop = document.createElement("audio");
 function playAyah() {
     var inputValue = document.getElementById("input").value;
     var audioUrl = "https://thenoblequran.s3.amazonaws.com/recitations/khalifa/" + inputValue + ".mp3";
@@ -10,7 +10,11 @@ function playAyah() {
     audiop.src = audioUrl;
     audiop.setAttribute('controls', 'true');
     audiop.setAttribute('autoplay', 'true');
-    audiop.play();
+    document.body.appendChild(audiop);
+    audiop.play().catch(function(error) {
+        console.error("Error playing audio:", error);
+        alert("Audio playback failed. Please check the input or try again later.");
+    });
 
     // Handle translations
     const translations = {
