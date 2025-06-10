@@ -6,15 +6,17 @@ function playAyah() {
         audioUrl = "5$.mp3";
     }
 
-    // Set the audio source and play it
-    audiop.src = audioUrl;
-    audiop.setAttribute('controls', 'true');
-    audiop.setAttribute('autoplay', 'true');
-    document.body.appendChild(audiop);
-    audiop.play().catch(function(error) {
-        console.error("Error playing audio:", error);
-        alert("Audio playback failed. Please check the input or try again later.");
-    });
+    // Set the audio source and play it+
+    if(event.keyCode === 13) { // Check if Enter key is pressed
+        audiop.src = audioUrl;
+        audiop.setAttribute('controls', 'true');
+        audiop.setAttribute('autoplay', 'true');
+        document.body.appendChild(audiop);
+        audiop.play().catch(function(error) {
+            console.error("Error playing audio:", error);
+            alert("Audio playback failed. Please check the input or try again later.");
+        });
+    }
 
     // Handle translations
     const translations = {
