@@ -9,6 +9,11 @@ function playAyah(){
         audiop.setAttribute('autoplay', 'true');
         document.getElementById("p").appendChild(audiop);
     }
+    const translations = {
+        "097001": "Verily, We sent it—(the whole Qurʾān)—down (to the lowest heaven) during the Night of Decree (for it to be revealed piecemeal thereafter)."
+    }
+    const translation = translations[inputValue];
+    document.getElementById("trans").innerHTML = translation;
 }
 function toggleLoop() {
     if (audiop.loop) {
