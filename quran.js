@@ -20,7 +20,12 @@ function playAyah() {
 
     // Handle translations
     const translations = {
-        "097001": "Verily, We sent it—(the whole Qurʾān)—down (to the lowest heaven) during the Night of Decree (for it to be revealed piecemeal thereafter)."
+        "087001": "Glorify the name of your Lord, the Most High (from that any besides Him should be called by His name).",
+        "087002": "Who created (all things) and proportioned (every creature in the best of forms).",
+        "087003": "And who determined (for every type of creature its abode, sustenance, and means of reproduction) and then guided (it to its instinct and behaviour).",
+        "087004": "And who brings out the (various types of) pasture (upon which animals graze).",
+        "087005": "And then He turns it into dark, dry stubble.",
+        "087006": "We will make you recite (and memorise this Qurʾān, O Muḥammad), so that you do not forget (it) (or: so that you do not neglect acting upon it)."
     };
     const translation = translations[inputValue] || "Translation not available.";
     document.getElementById("trans").innerHTML = translation;
