@@ -18,3 +18,4 @@ function MAD() {
 
     document.getElementById("result").innerHTML = "Mean Absolute Deviation: " + mad;
 }
+document.getElementById("calculateButton").addEventListener("click", MAD);
