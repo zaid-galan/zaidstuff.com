@@ -38,7 +38,9 @@ function playAyah() {
         "087016": "But you (O Mankind) give preference to the life of the world.",
         "087017": "Though the hereafter is better (for the believer) and is more lasting. ",
         "087018": "Verily, this—(what has been mentioned in the previous four verses)—is in the former scriptures. ",
-        "087019": "The scriptures of Ibrāhīm and Mūsā."
+        "087019": "The scriptures of Ibrāhīm and Mūsā.",
+        "092001": "By the (phenomenon of) the night, when it covers (the day and all creatures therein with its darkness).",
+        "092002": "And (by) the day, when it appears (and reveals what was hidden by the night).",
     };
     const translation = translations[inputValue] || "Translation not available.";
     document.getElementById("trans").innerHTML = translation;
