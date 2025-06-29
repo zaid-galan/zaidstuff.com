@@ -41,6 +41,7 @@ function playAyah() {
         "087019": "The scriptures of Ibrāhīm and Mūsā.",
         "092001": "By the (phenomenon of) the night, when it covers (the day and all creatures therein with its darkness).",
         "092002": "And (by) the day, when it appears (and reveals what was hidden by the night).",
+        "092003": "And (by) Him Who created the male (Ādam) and the female (Eve). "
     };
     const translation = translations[inputValue] || "Translation not available.";
     document.getElementById("trans").innerHTML = translation;
