@@ -104,26 +104,18 @@ function generate(){
         alert("Please enter a word.");
         return;
     }
-    if (randomSymbol === 0) {
-        randomSymbol = '!';
-    } else if (randomSymbol === 1) {
-        randomSymbol = '=';
-    } else if (randomSymbol === 2) {
-        randomSymbol = '#';
-    } else if (randomSymbol === 3) {
-        randomSymbol = '$';
-    } else if (randomSymbol === 4) {
-        randomSymbol = '%';
-    } else if (randomSymbol === 5) {
-        randomSymbol = '^';
-    } else if (randomSymbol === 6) {
-        randomSymbol = '&';
-    } else if (randomSymbol === 7) {
-        randomSymbol = '*';
-    } else if (randomSymbol === 8) {
-        randomSymbol = '.';
-    } else if (randomSymbol === 9) {
-        randomSymbol = '?';
+    switch (randomSymbol) {
+        case 0: randomSymbol = "!"; break;
+        case 1: randomSymbol = "?"; break;
+        case 2: randomSymbol = "@"; break;
+        case 3: randomSymbol = "#"; break;
+        case 4: randomSymbol = "$"; break;
+        case 5: randomSymbol = "%"; break;
+        case 6: randomSymbol = "~"; break;
+        case 7: randomSymbol = "&"; break;
+        case 8: randomSymbol = "*"; break;
+        case 9: randomSymbol = "."; break;
+        default: randomSymbol = "!"; break;
     }
     function pasword() {
         const parts = [word, randomNum, word2, randomNum2];
