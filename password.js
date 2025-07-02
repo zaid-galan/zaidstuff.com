@@ -27,22 +27,7 @@ function showPassword() {
         document.getElementById("showBtn").innerHTML = "Show";
     }
 }
-function shortenPassword() {
-    const passwordField = document.getElementById("password");
-    const password = passwordField.value;
-    var hobby = prompt("enter a hobby", '');
-    var initials = document.getElementById("name1").value.charAt(0) + document.getElementById("name2").value.charAt(0);
-    if (hobby.length < 1 || initials.length < 1) {
-        alert("Please enter first name and last name.");
-        return;
-    }
-    var randomNum1 = Math.floor(Math.random() * 99);
-    var randomNum2 = Math.floor(Math.random() * 99);
-    var randomNum3 = Math.floor(Math.random() * 99);
-    var newPassword = `${hobby}${randomNum1}${initials}${randomNum2}${randomNum3}`;
-    document.getElementById("password").value = newPassword;
-    passwordField.type = "text";
-}
+
 var wordBank = [ 
     "chair", "table", "computer", "phone", "book", "pen", "pencil", "notebook", "window", "door",
     "car", "bike", "bus", "train", "plane", "boat", "tree", "flower", "grass", "sky",
@@ -88,7 +73,8 @@ var wordBank = [
     "flight", "departure", "arrival", "ticket", "passport", "visa", "baggage", "luggage", "customs", "security",
     "boarding", "checkin", "hotel", "hostel", "resort", "motel", "inn", "suite", "reservation", "reception",
     "concierge", "room", "bedroom", "bathroom", "kitchen", "livingroom", "diningroom", "closet", "pantry", "laundry",
-    "garage", "workspace", "studio", "lab"
+    "garage", "workspace", "studio", "lab", "ubuntu", "fedora", "debian", "arch", "centos",
+    "redhat", "suse", "gentoo", "slackware", "linuxmint"
 ];
 
 function generate(){
