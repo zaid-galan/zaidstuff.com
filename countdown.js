@@ -1,9 +1,9 @@
 function display(){
     const now = new Date();
     var day = now.getDate();
-var daysUntilBeach = 16 - day;
+var daysUntilBeach = 11 - day;
 var month = now.getMonth() + 1;
-var monthsUntilBeach = 5 - month;
+var monthsUntilBeach = 9 - month;
 var hour = now.getHours();
 var hoursUntilBeach = 23 - hour;
 var minutes = now.getMinutes();
