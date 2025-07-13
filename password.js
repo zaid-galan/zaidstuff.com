@@ -82,7 +82,7 @@ function updateLengthValue(val) {
 }
 
 function generate(){
-    const length = parseInt(document.getElementById('len').value, 2);
+    const length = parseInt(document.getElementById('len').value);
     const passwordField = document.getElementById("password");
     const password = passwordField.value;
     var words = [
@@ -109,7 +109,7 @@ function generate(){
         Math.floor(Math.random() * 100),
         Math.floor(Math.random() * 100)
     ];
-    var randomSymbols = [
+    var randomSymbol = [
         Math.floor(Math.random() * 10),
         Math.floor(Math.random() * 10),
         Math.floor(Math.random() * 10),
