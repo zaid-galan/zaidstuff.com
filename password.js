@@ -110,16 +110,16 @@ function generate(){
         Math.floor(Math.random() * 100)
     ];
     var randomSymbols = [
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
-        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10)
     ];
     switch (randomSymbol[0]) {
         case 0: randomSymbol[0] = "!"; break;
