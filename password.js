@@ -77,36 +77,193 @@ var wordBank = [
     "redhat", "suse", "gentoo", "slackware", "linuxmint"
 ];
 
+function updateLengthValue(val) {
+    document.getElementById('lenValue').textContent = val;
+}
+
 function generate(){
+    const length = parseInt(document.getElementById('len').value, 2);
     const passwordField = document.getElementById("password");
     const password = passwordField.value;
-    var word = document.getElementById("word").value;
-    word.charAt(0).toUpperCase();
-    var word2 = wordBank[Math.floor(Math.random() * wordBank.length)];
-    var randomNum = Math.floor(Math.random() * 99);
-    var randomNum2 = Math.floor(Math.random() * 99);
-    var randomSymbol = Math.floor(Math.random() * 10);
+    var words = [
+        document.getElementById("word").value,
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)],
+        wordBank[Math.floor(Math.random() * wordBank.length)]
+    ]
+    words[0].charAt(0).toUpperCase();
+    var randomNums = [
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100)
+    ];
+    var randomSymbols = [
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+        Math.floor(Math.random() * 10);
+    ];
+    switch (randomSymbol[0]) {
+        case 0: randomSymbol[0] = "!"; break;
+        case 1: randomSymbol[0] = "?"; break;
+        case 2: randomSymbol[0] = "@"; break;
+        case 3: randomSymbol[0] = "#"; break;
+        case 4: randomSymbol[0] = "$"; break;
+        case 5: randomSymbol[0] = "%"; break;
+        case 6: randomSymbol[0] = "~"; break;
+        case 7: randomSymbol[0] = "&"; break;
+        case 8: randomSymbol[0] = "*"; break;
+        case 9: randomSymbol[0] = "."; break;
+        default: randomSymbol[0] = "!"; break;
+    }
+    switch (randomSymbol[1]) {
+        case 0: randomSymbol[1] = "!"; break;
+        case 1: randomSymbol[1] = "?"; break;
+        case 2: randomSymbol[1] = "@"; break;
+        case 3: randomSymbol[1] = "#"; break;
+        case 4: randomSymbol[1] = "$"; break;
+        case 5: randomSymbol[1] = "%"; break;
+        case 6: randomSymbol[1] = "~"; break;
+        case 7: randomSymbol[1] = "&"; break;
+        case 8: randomSymbol[1] = "*"; break;
+        case 9: randomSymbol[1] = "."; break;
+        default: randomSymbol[1] = "!"; break;
+    }
+    switch (randomSymbol[2]) {
+        case 0: randomSymbol[2] = "!"; break;
+        case 1: randomSymbol[2] = "?"; break;
+        case 2: randomSymbol[2] = "@"; break;
+        case 3: randomSymbol[2] = "#"; break;
+        case 4: randomSymbol[2] = "$"; break;
+        case 5: randomSymbol[2] = "%"; break;
+        case 6: randomSymbol[2] = "~"; break;
+        case 7: randomSymbol[2] = "&"; break;
+        case 8: randomSymbol[2] = "*"; break;
+        case 9: randomSymbol[2] = "."; break;
+        default: randomSymbol[2] = "!"; break;
+    }
+    switch (randomSymbol[3]) {
+        case 0: randomSymbol[3] = "!"; break;
+        case 1: randomSymbol[3] = "?"; break;
+        case 2: randomSymbol[3] = "@"; break;
+        case 3: randomSymbol[3] = "#"; break;
+        case 4: randomSymbol[3] = "$"; break;
+        case 5: randomSymbol[3] = "%"; break;
+        case 6: randomSymbol[3] = "~"; break;
+        case 7: randomSymbol[3] = "&"; break;
+        case 8: randomSymbol[3] = "*"; break;
+        case 9: randomSymbol[3] = "."; break;
+        default: randomSymbol[3] = "!"; break;
+    }
+    switch (randomSymbol[4]) {
+        case 0: randomSymbol[4] = "!"; break;
+        case 1: randomSymbol[4] = "?"; break;
+        case 2: randomSymbol[4] = "@"; break;
+        case 3: randomSymbol[4] = "#"; break;
+        case 4: randomSymbol[4] = "$"; break;
+        case 5: randomSymbol[4] = "%"; break;
+        case 6: randomSymbol[4] = "~"; break;
+        case 7: randomSymbol[4] = "&"; break;
+        case 8: randomSymbol[4] = "*"; break;
+        case 9: randomSymbol[4] = "."; break;
+        default: randomSymbol[4] = "!"; break;
+    }
+    switch (randomSymbol[5]) {
+        case 0: randomSymbol[5] = "!"; break;
+        case 1: randomSymbol[5] = "?"; break;
+        case 2: randomSymbol[5] = "@"; break;
+        case 3: randomSymbol[5] = "#"; break;
+        case 4: randomSymbol[5] = "$"; break;
+        case 5: randomSymbol[5] = "%"; break;
+        case 6: randomSymbol[5] = "~"; break;
+        case 7: randomSymbol[5] = "&"; break;
+        case 8: randomSymbol[5] = "*"; break;
+        case 9: randomSymbol[5] = "."; break;
+        default: randomSymbol[5] = "!"; break;
+    }
+    switch (randomSymbol[6]) {
+        case 0: randomSymbol[6] = "!"; break;
+        case 1: randomSymbol[6] = "?"; break;
+        case 2: randomSymbol[6] = "@"; break;
+        case 3: randomSymbol[6] = "#"; break;
+        case 4: randomSymbol[6] = "$"; break;
+        case 5: randomSymbol[6] = "%"; break;
+        case 6: randomSymbol[6] = "~"; break;
+        case 7: randomSymbol[6] = "&"; break;
+        case 8: randomSymbol[6] = "*"; break;
+        case 9: randomSymbol[6] = "."; break;
+        default: randomSymbol[6] = "!"; break;
+    }
+    switch (randomSymbol[7]) {
+        case 0: randomSymbol[7] = "!"; break;
+        case 1: randomSymbol[7] = "?"; break;
+        case 2: randomSymbol[7] = "@"; break;
+        case 3: randomSymbol[7] = "#"; break;
+        case 4: randomSymbol[7] = "$"; break;
+        case 5: randomSymbol[7] = "%"; break;
+        case 6: randomSymbol[7] = "~"; break;
+        case 7: randomSymbol[7] = "&"; break;
+        case 8: randomSymbol[7] = "*"; break;
+        case 9: randomSymbol[7] = "."; break;
+        default: randomSymbol[7] = "!"; break;
+    }
+    switch (randomSymbol[8]) {
+        case 0: randomSymbol[8] = "!"; break;
+        case 1: randomSymbol[8] = "?"; break;
+        case 2: randomSymbol[8] = "@"; break;
+        case 3: randomSymbol[8] = "#"; break;
+        case 4: randomSymbol[8] = "$"; break;
+        case 5: randomSymbol[8] = "%"; break;
+        case 6: randomSymbol[8] = "~"; break;
+        case 7: randomSymbol[8] = "&"; break;
+        case 8: randomSymbol[8] = "*"; break;
+        case 9: randomSymbol[8] = "."; break;
+        default: randomSymbol[8] = "!"; break;
+    }
+    switch (randomSymbol[9]) {
+        case 0: randomSymbol[9] = "!"; break;
+        case 1: randomSymbol[9] = "?"; break;
+        case 2: randomSymbol[9] = "@"; break;
+        case 3: randomSymbol[9] = "#"; break;
+        case 4: randomSymbol[9] = "$"; break;
+        case 5: randomSymbol[9] = "%"; break;
+        case 6: randomSymbol[9] = "~"; break;
+        case 7: randomSymbol[9] = "&"; break;
+        case 8: randomSymbol[9] = "*"; break;
+        case 9: randomSymbol[9] = "."; break;
+        default: randomSymbol[9] = "!"; break;
+    }
     if (word.length < 1) {
         alert("Please enter a word.");
         return;
     }
-    switch (randomSymbol) {
-        case 0: randomSymbol = "!"; break;
-        case 1: randomSymbol = "?"; break;
-        case 2: randomSymbol = "@"; break;
-        case 3: randomSymbol = "#"; break;
-        case 4: randomSymbol = "$"; break;
-        case 5: randomSymbol = "%"; break;
-        case 6: randomSymbol = "~"; break;
-        case 7: randomSymbol = "&"; break;
-        case 8: randomSymbol = "*"; break;
-        case 9: randomSymbol = "."; break;
-        default: randomSymbol = "!"; break;
-    }
+    
     function pasword() {
-        const parts = [word, randomNum, word2, randomNum2];
+        const parts = [];
+        for (let i = 0; i < length; i++) {
+            parts.push(words[i]);
+            parts.push(randomNums[i]);
+            parts.push(randomSymbols[i]);
+        }
         const randomIndex = Math.floor(Math.random() * (parts.length + 1));
-        parts.splice(randomIndex, 0, randomSymbol);
         return parts.join('');
     }
     passwordField.value = pasword();
