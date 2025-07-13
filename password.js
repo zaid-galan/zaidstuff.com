@@ -80,7 +80,9 @@ var wordBank = [
 function updateLengthValue(val) {
     document.getElementById('lenValue').textContent = val;
 }
-
+setinterval(function() {
+    updateLengthValue(document.getElementById('len').value);
+}, 1);
 function generate(){
     const length = parseInt(document.getElementById('len').value);
     const passwordField = document.getElementById("password");
