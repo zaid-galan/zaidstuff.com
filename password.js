@@ -261,7 +261,7 @@ function generate(){
         for (let i = 0; i < length; i++) {
             parts.push(words[i]);
             parts.push(randomNums[i]);
-            parts.push(randomSymbols[i]);
+            parts.push(randomSymbol[i]);
         }
         const randomIndex = Math.floor(Math.random() * (parts.length + 1));
         return parts.join('');
