@@ -13,15 +13,18 @@ body {
   padding: 10px 20px;
   font-family: sans-serif;
   font: sans-serif;
+  margin: 250px;
 }
 
 h1 {
   color: red;
   text-decoration: none;
   cursor: text;
-  font-size: 2em;
+  font-size: 3em;
   display: inline;
   margin: none;
+  align-self: center;
+  margin-top: 250px;
 }
 
 .secret,
