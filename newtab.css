@@ -142,3 +142,43 @@ nav {
 iframe {
   display: block;
 }
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 40px 10px;
+  justify-items: center;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100px;
+  height: 100px;
+  backdrop-filter: blur(5px);
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tile img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.tile span {
+  font-size: 0.8rem;
+  word-break: break-word;
+}

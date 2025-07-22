@@ -1,54 +1,150 @@
-<!doctype html>
-<html>
-    <head>
-        <title>
-            New Tab
-        </title>
-        <link rel="stylesheet" href="newtab.css">
-    </head>
-    <body>
-        <h1>
-            New Tab
-        </h1>
-        <div class="bar"><input onkeyup="webpageOpen()" id="bar" value="https://"></div>
-        <div class="bar"><button onclick="askChatGPT()">Ask</button><input type="text" id="questionInput" placeholder="Ask a question"></div>
-        <div id="shortcuts">
-            <a href="https://amazon.com/">Amazon</a>
-            <a href="https://youtube.com/">YouTube</a>
-            <a href="https://chatgpt.com/">ChatGPT</a>
-            <a href="https://gmail.com/">Gmail</a>
-            <a href="https://github.com/">GitHub</a>
-            <a href="https://ineasysteps.com/">ineasysteps.com</a>
-            <a href="https://rosettastone.com/">Rosetta Stone</a>
-            <a href="https://thenoblequran.com/">Qur'an</a>
-            <a href="https://ubuntu.com/">Ubuntu</a>
-            <a href="https://fedoraproject.org/">Fedora</a>
-            <a href="https://manjaro.org/">Manjaro</a>
-            <a href="https://archlinux.org/">Arch Linux</a>
-            <a href="https://bedrocklinux.org/">Bedrock Linux</a>
-            <a href="http://127.0.0.1:9999">Abyss</a>
-            <a href="https://nytimes.com/games/wordle/index.html">Wordle</a>
-            <a href="http://localhost:9999">Abyss</a>
-            <a href="https://addons.mozilla.org/">Extensions</a>
-            <a href="https://stackoverflow.com/">Stack Overflow</a>
-            <a href="http://localhost:7777">Zaidstuff.local</a>
-            <a href="https://google.com/maps">Maps</a>
-            <a href="https://zaidstuff.com/">Zaidstuff</a>
-            <a href="https://color.firefox.com/">Firefox Color</a>
-            <a href="https://unsplash.com/">Unsplash</a>
-            <a href="https://arabic-keyboard.org/">Arabic Keyboard</a>
-            <a href="https://videodonkey.com/">Dunkey!</a>
-            <a href="https://pcpartpicker.com/list/whnv74">PCPartPicker</a>
-            <a href="https://rapidtables.com/convert/number/binary-to-ascii.html">Binary To Text</a>
-            <a href="https://hostinger.com/php-hosting">Hostinger</a>
-            <a href="https://wikipedia.org/">Wikipedia</a>
-            <a href="https://fragrantica.com/">Fragrantica</a>
-        </div>
-        <iframe class="m" id="iframe" title="prayerWidget" style="width:175px;height: 358px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/4753671/shafi/5/0/15.0/15.0" alt="prayer times"></iframe>
-    </body>
-    <script src="index.js"></script>
-    <script src="favicon.js"></script>
-    <script src="time.js"></script>
-    <script src="toggle.js"></script>
-    <script src="gpt.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <h1>New Tab</h1>
+
+  <div class="bar">
+    <input onkeyup="webpageOpen()" id="bar" value="https://">
+  </div>
+
+  <div class="bar">
+    <button onclick="askChatGPT()">Ask</button>
+    <input type="text" id="questionInput" placeholder="Ask a question">
+  </div>
+
+  <div id="shortcuts" class="tile-grid">
+    <a class="tile" href="https://amazon.com/">
+      <img src="https://icons.duckduckgo.com/ip3/amazon.com.ico" alt="Amazon">
+      <span>Amazon</span>
+    </a>
+    <a class="tile" href="https://youtube.com/">
+      <img src="https://icons.duckduckgo.com/ip3/youtube.com.ico" alt="YouTube">
+      <span>YouTube</span>
+    </a>
+    <a class="tile" href="https://chatgpt.com/">
+      <img src="https://icons.duckduckgo.com/ip3/chatgpt.com.ico" alt="ChatGPT">
+      <span>ChatGPT</span>
+    </a>
+    <a class="tile" href="https://gmail.com/">
+      <img src="https://icons.duckduckgo.com/ip3/gmail.com.ico" alt="Gmail">
+      <span>Gmail</span>
+    </a>
+    <a class="tile" href="https://github.com/">
+      <img src="https://icons.duckduckgo.com/ip3/github.com.ico" alt="GitHub">
+      <span>GitHub</span>
+    </a>
+    <a class="tile" href="https://ineasysteps.com/">
+      <img src="https://icons.duckduckgo.com/ip3/ineasysteps.com.ico" alt="ineasysteps">
+      <span>ineasysteps</span>
+    </a>
+    <a class="tile" href="https://rosettastone.com/">
+      <img src="https://icons.duckduckgo.com/ip3/rosettastone.com.ico" alt="Rosetta Stone">
+      <span>Rosetta</span>
+    </a>
+    <a class="tile" href="https://thenoblequran.com/">
+      <img src="https://icons.duckduckgo.com/ip3/thenoblequran.com.ico" alt="Quran">
+      <span>Qur'an</span>
+    </a>
+    <a class="tile" href="https://ubuntu.com/">
+      <img src="https://icons.duckduckgo.com/ip3/ubuntu.com.ico" alt="Ubuntu">
+      <span>Ubuntu</span>
+    </a>
+    <a class="tile" href="https://fedoraproject.org/">
+      <img src="https://icons.duckduckgo.com/ip3/fedoraproject.org.ico" alt="Fedora">
+      <span>Fedora</span>
+    </a>
+    <a class="tile" href="https://manjaro.org/">
+      <img src="https://icons.duckduckgo.com/ip3/manjaro.org.ico" alt="Manjaro">
+      <span>Manjaro</span>
+    </a>
+    <a class="tile" href="https://archlinux.org/">
+      <img src="https://icons.duckduckgo.com/ip3/archlinux.org.ico" alt="Arch">
+      <span>Arch</span>
+    </a>
+    <a class="tile" href="https://bedrocklinux.org/">
+      <img src="https://icons.duckduckgo.com/ip3/bedrocklinux.org.ico" alt="Bedrock">
+      <span>Bedrock</span>
+    </a>
+    <a class="tile" href="http://127.0.0.1:9999">
+      <img src="https://icons.duckduckgo.com/ip3/127.0.0.1.ico" alt="Abyss">
+      <span>Abyss</span>
+    </a>
+    <a class="tile" href="https://nytimes.com/games/wordle/index.html">
+      <img src="https://icons.duckduckgo.com/ip3/nytimes.com.ico" alt="Wordle">
+      <span>Wordle</span>
+    </a>
+    <a class="tile" href="https://addons.mozilla.org/">
+      <img src="https://icons.duckduckgo.com/ip3/addons.mozilla.org.ico" alt="Extensions">
+      <span>Extensions</span>
+    </a>
+    <a class="tile" href="https://stackoverflow.com/">
+      <img src="https://icons.duckduckgo.com/ip3/stackoverflow.com.ico" alt="Stack Overflow">
+      <span>Stack Overflow</span>
+    </a>
+    <a class="tile" href="http://localhost:7777">
+      <img src="https://icons.duckduckgo.com/ip3/localhost.ico" alt="Zaidstuff.local">
+      <span>Local</span>
+    </a>
+    <a class="tile" href="https://google.com/maps">
+      <img src="https://icons.duckduckgo.com/ip3/google.com.ico" alt="Maps">
+      <span>Maps</span>
+    </a>
+    <a class="tile" href="https://zaidstuff.com/">
+      <img src="https://icons.duckduckgo.com/ip3/zaidstuff.com.ico" alt="Zaidstuff">
+      <span>Zaidstuff</span>
+    </a>
+    <a class="tile" href="https://color.firefox.com/">
+      <img src="https://icons.duckduckgo.com/ip3/color.firefox.com.ico" alt="Firefox Color">
+      <span>Firefox Color</span>
+    </a>
+    <a class="tile" href="https://unsplash.com/">
+      <img src="https://icons.duckduckgo.com/ip3/unsplash.com.ico" alt="Unsplash">
+      <span>Unsplash</span>
+    </a>
+    <a class="tile" href="https://arabic-keyboard.org/">
+      <img src="https://icons.duckduckgo.com/ip3/arabic-keyboard.org.ico" alt="Arabic Keyboard">
+      <span>Keyboard</span>
+    </a>
+    <a class="tile" href="https://videodonkey.com/">
+      <img src="https://icons.duckduckgo.com/ip3/videodonkey.com.ico" alt="Dunkey">
+      <span>Dunkey</span>
+    </a>
+    <a class="tile" href="https://pcpartpicker.com/list/whnv74">
+      <img src="https://icons.duckduckgo.com/ip3/pcpartpicker.com.ico" alt="PCPartPicker">
+      <span>PC Parts</span>
+    </a>
+    <a class="tile" href="https://rapidtables.com/convert/number/binary-to-ascii.html">
+      <img src="https://icons.duckduckgo.com/ip3/rapidtables.com.ico" alt="Binary">
+      <span>Binary/Text</span>
+    </a>
+    <a class="tile" href="https://hostinger.com/php-hosting">
+      <img src="https://icons.duckduckgo.com/ip3/hostinger.com.ico" alt="Hostinger">
+      <span>Hostinger</span>
+    </a>
+    <a class="tile" href="https://wikipedia.org/">
+      <img src="https://icons.duckduckgo.com/ip3/wikipedia.org.ico" alt="Wikipedia">
+      <span>Wikipedia</span>
+    </a>
+    <a class="tile" href="https://fragrantica.com/">
+      <img src="https://icons.duckduckgo.com/ip3/fragrantica.com.ico" alt="Fragrantica">
+      <span>Fragrantica</span>
+    </a>
+  </div>
+
+  <iframe class="m" id="iframe" title="prayerWidget"
+    style="width:175px;height: 358px; border: 1px solid #ddd;" scrolling="no"
+    src="https://www.islamicfinder.org/prayer-widget/4753671/shafi/5/0/15.0/15.0" alt="prayer times">
+  </iframe>
+
+  <script src="index.js"></script>
+  <script src="favicon.js"></script>
+  <script src="time.js"></script>
+  <script src="toggle.js"></script>
+  <script src="gpt.js"></script>
+</body>
 </html>
