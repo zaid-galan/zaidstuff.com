@@ -8,8 +8,7 @@ function webpageOpen(){
     } else if(URL === "tynker"){
         URL = "https://tynker.com"
     }
-    if (event.keyCode === 13){
-    window.open(URL,'Popup','top=0,left=0,width=1920,height=1080');}
+    if (event.keyCode === 13){location.href = URL}
 }
 function change(){
     document.body.setAttribute('style','background:url(MonolithAttack18.gif);background-repeat:repeat;background-size:50%;');
