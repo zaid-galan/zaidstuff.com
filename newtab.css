@@ -5,8 +5,9 @@
 
 body {
   background: url(mpiwnicki_chalet.jpg);
-  background-position: bottom;
+  background-position: center;
   background-size: 100%;
+  background-attachment: fixed;
   color: red;
   font-size: 20px;
   padding: 10px 20px;
