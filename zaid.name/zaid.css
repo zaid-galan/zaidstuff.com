@@ -89,7 +89,6 @@ h2 {
   font-size: 2em;
   margin-bottom: 10px;
   color: #ffdd57;
-  text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: 2px solid #7700ff;
   display: inline-block;
@@ -209,3 +208,4 @@ footer {
     width: 100px;
   }
 }
+
