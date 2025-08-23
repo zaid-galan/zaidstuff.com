@@ -271,8 +271,7 @@ function generate(){
     function pasword() {
         const parts = [];
         for (let i = 0; i < length; i++) {
-            randomUppercase(words[i])
-            parts.push(words[i]);
+            parts.push(randomUppercase(words[i]));
             parts.push(randomNums[i]);
             parts.push(randomSymbol[i]);
         }
