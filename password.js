@@ -7,6 +7,16 @@ function copyPassword() {
         alert("Failed to copy password.");
     });
 }
+function randomUppercase(str) {
+    if (!str) return str; // handle empty string
+
+    let index = Math.floor(Math.random() * str.length);
+    return (
+        str.slice(0, index) +
+        str[index].toUpperCase() +
+        str.slice(index + 1)
+    );
+}
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle("dark-theme");
@@ -261,6 +271,7 @@ function generate(){
     function pasword() {
         const parts = [];
         for (let i = 0; i < length; i++) {
+            randomUppercase(words[i])
             parts.push(words[i]);
             parts.push(randomNums[i]);
             parts.push(randomSymbol[i]);
