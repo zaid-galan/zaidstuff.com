@@ -20,7 +20,7 @@ html {
 /* Navigation           */
 /* -------------------- */
 nav {
-  background-color: #5500ff;
+  background-color: #4500ff;
   padding: 10px;
   position: fixed;
   top: -50px;
@@ -117,7 +117,7 @@ section#contact {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(255, 255, 255,ls  0.1);
 }
 
 .project-card.large-gif {
