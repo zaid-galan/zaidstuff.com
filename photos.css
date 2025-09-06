@@ -4,9 +4,9 @@ body{
 }
 .img{
     border: 10px solid white;
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 450px;
 }
 #0{
-    background: url(1000001159.jpg);
+    background: url(Photos/1000001159.jpg);
 }
