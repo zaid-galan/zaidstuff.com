@@ -2,3 +2,6 @@ body{
     background: url(bulletinboard.jpg);
     background-size: 100%;
 }
+.img{
+    border: 10px solid white;
+}
