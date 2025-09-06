@@ -6,11 +6,12 @@ body{
     border: 10px solid white;
     width: 600px;
     height: 450px;
+    margin: 34px;
 }
 .zero {
     background: url("Photos/0.jpg");
     background-size: 600px 450px; /* width x height */
     background-repeat: no-repeat;  /* prevent tiling */
-    transform: rotate(37deg);
+    transform: rotate(5deg);
 }
 
