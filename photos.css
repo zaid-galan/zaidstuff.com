@@ -6,6 +6,7 @@ body{
     border: 10px solid white;
     width: 600px;
     height: 450px;
+    background-size: 600px;
 }
 .zero{
     background: url(Photos/0.jpg);
