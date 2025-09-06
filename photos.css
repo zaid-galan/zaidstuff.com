@@ -1,3 +1,4 @@
 body{
-    background: url(bulletinboard.jpg)
+    background: url(bulletinboard.jpg);
+    background-size: 100%;
 }
