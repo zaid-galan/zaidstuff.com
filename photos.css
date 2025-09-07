@@ -17,7 +17,7 @@ gallery {
 /*gallery .img {
  *   flex: 0 0 calc(33.333% - 40px); /* 3 per row, minus margins */
  /*margin: 20px;
-  }**/
+  *}**/
  .zero {
      background: url("Photos/0.jpg");
      background-size: 600px 450px; /* width x height */
@@ -135,6 +135,68 @@ gallery {
  }
  .sixteen{
      background: url("Photos/16.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .seventeen{
+     background: url("Photos/17.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .eighteen{
+     background: url("Photos/18.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .nineteen {
+     background: url("Photos/19.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
+
+ .twenty{
+     background: url("Photos/20.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .twenty-one{
+     background: url("Photos/21.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .twenty-two{
+     background: url("Photos/22.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .twenty-three{
+     background: url("Photos/23.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .twenty-four {
+     background: url("Photos/24.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
+
+ .twenty-five{
+     background: url("Photos/25.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .twenty-six{
+     background: url("Photos/26.jpg");
      background-size: 800px 450px; /* width x height */
      background-repeat: no-repeat;  /* prevent tiling */
      transform: rotate(-23deg);
