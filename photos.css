@@ -15,3 +15,9 @@ body{
     transform: rotate(5deg);
 }
 
+.one{
+    background: url("Photos/0.jpg");
+    background-size: 600px 450px; /* width x height */
+    background-repeat: no-repeat;  /* prevent tiling */
+    transform: rotate(-8deg);
+}
