@@ -4,7 +4,7 @@ body{
 }
 .img{
     border: 10px solid white;
-    width: 600px;
+    width: 800px;
     height: 450px;
     margin: 34px;
 }
@@ -14,20 +14,128 @@ gallery {
     justify-content: center; /* optional: centers the rows */
 }
 
-gallery .img {
-    flex: 0 0 calc(33.333% - 40px); /* 3 per row, minus margins */
-    /*margin: 20px;*/
-}
-.zero {
-    background: url("Photos/0.jpg");
-    background-size: 600px 450px; /* width x height */
-    background-repeat: no-repeat;  /* prevent tiling */
-    transform: rotate(5deg);
-}
+/*gallery .img {
+ *   flex: 0 0 calc(33.333% - 40px); /* 3 per row, minus margins */
+ /*margin: 20px;
+  }**/
+ .zero {
+     background: url("Photos/0.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(5deg);
+     width: 600px;
+     height: 450px;
+ }
 
-.one{
-    background: url("Photos/1.jpg");
-    background-size: 600px 450px; /* width x height */
-    background-repeat: no-repeat;  /* prevent tiling */
-    transform: rotate(-8deg);
-}
+ .one{
+     background: url("Photos/1.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+     width: 600px;
+     height: 450px;
+ }
+ .two{
+     background: url("Photos/2.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+     width: 600px;
+     height: 450px;
+ }
+ .three {
+     background: url("Photos/3.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+     width: 600px;
+     height: 450px;
+ }
+
+ .four{
+     background: url("Photos/4.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+     width: 600px;
+     height: 450px;
+ }
+ .five{
+     background: url("Photos/5.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+     width: 600px;
+     height: 450px;
+ }
+ .six {
+     background: url("Photos/6.jpg");
+     background-size: 600px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(5deg);
+     width: 600px;
+     height: 450px;
+ }
+
+ .seven{
+     background: url("Photos/7.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .eight{
+     background: url("Photos/8.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .nine {
+     background: url("Photos/9.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
+
+ .ten{
+     background: url("Photos/10.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .eleven{
+     background: url("Photos/11.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .twelve{
+     background: url("Photos/12.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .thirteen{
+     background: url("Photos/13.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .fourteen {
+     background: url("Photos/14.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
+
+ .fifteen{
+     background: url("Photos/15.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .sixteen{
+     background: url("Photos/16.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
