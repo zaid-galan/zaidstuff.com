@@ -201,3 +201,52 @@ gallery {
      background-repeat: no-repeat;  /* prevent tiling */
      transform: rotate(-23deg);
  }
+ .twenty-seven{
+     background: url("Photos/27.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .twenty-eight{
+     background: url("Photos/28.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .twenty-nine {
+     background: url("Photos/29.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
+
+ .thirty{
+     background: url("Photos/30.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .thirty-one{
+     background: url("Photos/31.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .thirty-two{
+     background: url("Photos/32.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-8deg);
+ }
+ .thirty-three{
+     background: url("Photos/33.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(-23deg);
+ }
+ .thirty-four {
+     background: url("Photos/34.jpg");
+     background-size: 800px 450px; /* width x height */
+     background-repeat: no-repeat;  /* prevent tiling */
+     transform: rotate(12deg);
+ }
